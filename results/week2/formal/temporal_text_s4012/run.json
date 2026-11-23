@@ -1,0 +1,124 @@
+{
+  "protocol": "temporal",
+  "variant": "text",
+  "seed": 4012,
+  "best_epoch": 3,
+  "epochs": [
+    {
+      "epoch": 1,
+      "dev_macro_f1": 0.4548493052397461,
+      "dev_accuracy": 0.5514112903225806,
+      "train_loss": 0.6549992260458734,
+      "optimizer_steps": 743,
+      "seconds": 174.34
+    },
+    {
+      "epoch": 2,
+      "dev_macro_f1": 0.6749344625932647,
+      "dev_accuracy": 0.6789314516129032,
+      "train_loss": 0.565999390038701,
+      "optimizer_steps": 743,
+      "seconds": 174.225
+    },
+    {
+      "epoch": 3,
+      "dev_macro_f1": 0.7000152998933115,
+      "dev_accuracy": 0.703125,
+      "train_loss": 0.4771345852000252,
+      "optimizer_steps": 743,
+      "seconds": 174.351
+    }
+  ],
+  "class_order": [
+    "D",
+    "R"
+  ],
+  "metadata_stats": {
+    "features": []
+  },
+  "metadata_weight": null,
+  "counts": {
+    "train": {
+      "speeches": 11886,
+      "speakers": 709,
+      "windows": 18624
+    },
+    "dev": {
+      "speeches": 3968,
+      "speakers": 510,
+      "windows": 6186
+    },
+    "test": {
+      "speeches": 3970,
+      "speakers": 500,
+      "windows": 6118
+    }
+  },
+  "dev_metrics": {
+    "accuracy": 0.703125,
+    "macro_f1": 0.7000152998933115,
+    "confusion_gold_by_pred": [
+      [
+        1597,
+        432
+      ],
+      [
+        746,
+        1193
+      ]
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.6355163727959697,
+    "macro_f1": 0.6338602658791221,
+    "confusion_gold_by_pred": [
+      [
+        1395,
+        457
+      ],
+      [
+        990,
+        1128
+      ]
+    ]
+  },
+  "dev_checkpoint_replay_max_abs_error": 0.0,
+  "pretrained_model": "FacebookAI/roberta-base",
+  "pretrained_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "pretrained_sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+  "training": {
+    "selection": "Maximum development speech macro-F1, earliest epoch on ties.",
+    "objective": "Mean speech cross-entropy on arithmetic mean window probabilities.",
+    "optimizer": "AdamW",
+    "encoder_lr": 2e-05,
+    "encoder_weight_decay": 0.01,
+    "metadata_lr": null,
+    "metadata_weight_decay": 0.0,
+    "schedule": "constant",
+    "gradient_clip_norm": 1.0,
+    "effective_batch_speeches": 16,
+    "microbatch_speeches": 4,
+    "autocast": "bfloat16",
+    "shuffle": "Python Random(seed + epoch - 1), canonical speech-ID order before sampling."
+  },
+  "week1_sha256": {
+    "corpus": "02649f7e5c7a39bb91f071a09d91a840214b9d8f6607131ae1f3ff1d09198db9",
+    "splits": "9a58aa913d5ec60e07574f580e9b70db189ae1e51becf59409fbfc8d58b8ff7f",
+    "windows": "860f9275a3c5c97c44e602960701b046b538a013546e655f6167aef5657269b3",
+    "tokenizer": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e"
+  },
+  "checkpoint": "checkpoints/week2_formal/temporal_text_s4012/epoch3.pt",
+  "checkpoint_sha256": "dd841754d1184b5ad1677ca2df1afcb8aace434c054582e685184aa2bdd704cc",
+  "output_sha256": {
+    "dev_predictions.csv": "507177c9a64dd510ea6c2873b70167091a588edcfe2f2e607b78454573bd4f30",
+    "test_predictions.csv": "9205c6ba6b72f57ff4fdf01a56ae1676ef93dc61e63f05482364692eb7181e99"
+  },
+  "versions": {
+    "python": "3.14.0",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.6.2",
+    "gpu": "NVIDIA GeForce RTX 5070"
+  },
+  "finished_utc": "2026-11-23T12:55:43.139802+00:00",
+  "this_invocation_seconds": 566.36
+}

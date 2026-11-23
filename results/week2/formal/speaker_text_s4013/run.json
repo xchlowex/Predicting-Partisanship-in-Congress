@@ -1,0 +1,124 @@
+{
+  "protocol": "speaker",
+  "variant": "text",
+  "seed": 4013,
+  "best_epoch": 3,
+  "epochs": [
+    {
+      "epoch": 1,
+      "dev_macro_f1": 0.5918206364183556,
+      "dev_accuracy": 0.63035413153457,
+      "train_loss": 0.6352515514782624,
+      "optimizer_steps": 869,
+      "seconds": 198.016
+    },
+    {
+      "epoch": 2,
+      "dev_macro_f1": 0.6765283839533501,
+      "dev_accuracy": 0.6920741989881957,
+      "train_loss": 0.5128803553835565,
+      "optimizer_steps": 869,
+      "seconds": 196.538
+    },
+    {
+      "epoch": 3,
+      "dev_macro_f1": 0.6889735853580563,
+      "dev_accuracy": 0.7025295109612142,
+      "train_loss": 0.3939381286889081,
+      "optimizer_steps": 869,
+      "seconds": 197.438
+    }
+  ],
+  "class_order": [
+    "D",
+    "R"
+  ],
+  "metadata_stats": {
+    "features": []
+  },
+  "metadata_weight": null,
+  "counts": {
+    "train": {
+      "speeches": 13893,
+      "speakers": 610,
+      "windows": 21684
+    },
+    "dev": {
+      "speeches": 2965,
+      "speakers": 130,
+      "windows": 4614
+    },
+    "test": {
+      "speeches": 2966,
+      "speakers": 131,
+      "windows": 4630
+    }
+  },
+  "dev_metrics": {
+    "accuracy": 0.7025295109612142,
+    "macro_f1": 0.6889735853580563,
+    "confusion_gold_by_pred": [
+      [
+        1351,
+        216
+      ],
+      [
+        666,
+        732
+      ]
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.7019554956169926,
+    "macro_f1": 0.6883370919113784,
+    "confusion_gold_by_pred": [
+      [
+        1351,
+        217
+      ],
+      [
+        667,
+        731
+      ]
+    ]
+  },
+  "dev_checkpoint_replay_max_abs_error": 0.0,
+  "pretrained_model": "FacebookAI/roberta-base",
+  "pretrained_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "pretrained_sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+  "training": {
+    "selection": "Maximum development speech macro-F1, earliest epoch on ties.",
+    "objective": "Mean speech cross-entropy on arithmetic mean window probabilities.",
+    "optimizer": "AdamW",
+    "encoder_lr": 2e-05,
+    "encoder_weight_decay": 0.01,
+    "metadata_lr": null,
+    "metadata_weight_decay": 0.0,
+    "schedule": "constant",
+    "gradient_clip_norm": 1.0,
+    "effective_batch_speeches": 16,
+    "microbatch_speeches": 4,
+    "autocast": "bfloat16",
+    "shuffle": "Python Random(seed + epoch - 1), canonical speech-ID order before sampling."
+  },
+  "week1_sha256": {
+    "corpus": "02649f7e5c7a39bb91f071a09d91a840214b9d8f6607131ae1f3ff1d09198db9",
+    "splits": "9a58aa913d5ec60e07574f580e9b70db189ae1e51becf59409fbfc8d58b8ff7f",
+    "windows": "860f9275a3c5c97c44e602960701b046b538a013546e655f6167aef5657269b3",
+    "tokenizer": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e"
+  },
+  "checkpoint": "checkpoints/week2_formal/speaker_text_s4013/epoch3.pt",
+  "checkpoint_sha256": "8ef44d5c2beb37364d53871b811446a06cde84dcd3b022885f58d1716862bc47",
+  "output_sha256": {
+    "dev_predictions.csv": "11b38a6e471391925bc47feda60f5788f8f1da6b6358a55da34ab992ccbcf85b",
+    "test_predictions.csv": "412df7fcc538d260ac2a4fa4485ebf95ba97f2df2b17430a70d3da6429a61fae"
+  },
+  "versions": {
+    "python": "3.14.0",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.6.2",
+    "gpu": "NVIDIA GeForce RTX 5070"
+  },
+  "finished_utc": "2026-11-23T13:15:43.819135+00:00",
+  "this_invocation_seconds": 627.6
+}

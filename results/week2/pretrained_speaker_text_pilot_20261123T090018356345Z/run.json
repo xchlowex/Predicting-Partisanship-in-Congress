@@ -1,0 +1,102 @@
+{
+  "mode": "pretrained_speaker_text_pilot",
+  "protocol": "speaker_split",
+  "inputs": [
+    "text"
+  ],
+  "classes_in_order": [
+    "D",
+    "R"
+  ],
+  "test_evaluated": false,
+  "pretrained_model": "FacebookAI/roberta-base",
+  "pretrained_revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+  "pretrained_sha256": "5bde1d28afb363d0103324efeb5afc8b2b397fe5e04beabb9b1ef355255ade81",
+  "week1_sha256": {
+    "corpus": "02649f7e5c7a39bb91f071a09d91a840214b9d8f6607131ae1f3ff1d09198db9",
+    "splits": "9a58aa913d5ec60e07574f580e9b70db189ae1e51becf59409fbfc8d58b8ff7f",
+    "windows": "860f9275a3c5c97c44e602960701b046b538a013546e655f6167aef5657269b3",
+    "tokenizer": "847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e"
+  },
+  "sample_seed": 4011,
+  "training_seed": 4011,
+  "epochs": 1,
+  "microbatch_speeches": 4,
+  "effective_batch_speeches": 16,
+  "optimizer": "AdamW",
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "gradient_clip_norm": 1.0,
+  "loss": "Cross-entropy on mean window probabilities with equal weight per speech.",
+  "device": "cuda",
+  "precision": "bf16 autocast",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "versions": {
+    "python": "3.14.0",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.6.2"
+  },
+  "training": {
+    "optimizer_steps": 16,
+    "mean_train_speech_loss": 0.6946729477494955,
+    "max_abs_change_first_layer_query_weight": 0.0002947859466075897
+  },
+  "train_and_dev_seconds": 3.22,
+  "checkpoint": "checkpoints/pretrained_speaker_text_pilot_20261123T090018356345Z",
+  "counts": {
+    "train": {
+      "speeches": 256,
+      "speakers": 163,
+      "windows": 407,
+      "labels": {
+        "D": 135,
+        "R": 121
+      }
+    },
+    "dev": {
+      "speeches": 128,
+      "speakers": 62,
+      "windows": 195,
+      "labels": {
+        "D": 68,
+        "R": 60
+      }
+    }
+  },
+  "dev_metrics": {
+    "accuracy": 0.5078125,
+    "macro_f1": 0.4311111111111111,
+    "class_order": [
+      "D",
+      "R"
+    ],
+    "per_class": {
+      "D": {
+        "support": 68,
+        "precision": 0.5233644859813084,
+        "recall": 0.8235294117647058,
+        "f1": 0.64
+      },
+      "R": {
+        "support": 60,
+        "precision": 0.42857142857142855,
+        "recall": 0.15,
+        "f1": 0.2222222222222222
+      }
+    },
+    "confusion_gold_by_pred": [
+      [
+        56,
+        12
+      ],
+      [
+        51,
+        9
+      ]
+    ]
+  },
+  "output_sha256": {
+    "sample.csv": "46c303a2cdffad9fdf579785cb46eb57b862d8abd64ed2ba00d9edef200353e3",
+    "dev_predictions.csv": "980dcb6a985b4defa1f503895176e6222b6fe3953ebaf7b8ee57620b4e02fc35"
+  }
+}

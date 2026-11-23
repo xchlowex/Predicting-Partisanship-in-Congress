@@ -2,4 +2,5 @@
 data/week1/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
 data/reference/** -text
 results/week1/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+results/week2/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
 data/week1/by_congress/*.gz binary
