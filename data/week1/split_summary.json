@@ -1,0 +1,205 @@
+{
+  "scored_labels": [
+    "D",
+    "R"
+  ],
+  "corpus_support": {
+    "speeches": 20000,
+    "speakers": 874,
+    "labels": {
+      "D": {
+        "speeches": 10463,
+        "speakers": 417
+      },
+      "I": {
+        "speeches": 117,
+        "speakers": 2
+      },
+      "ID": {
+        "speeches": 59,
+        "speakers": 1
+      },
+      "R": {
+        "speeches": 9361,
+        "speakers": 455
+      }
+    }
+  },
+  "descriptive_only": {
+    "speeches": 176,
+    "speakers": 3,
+    "labels": {
+      "I": {
+        "speeches": 117,
+        "speakers": 2
+      },
+      "ID": {
+        "speeches": 59,
+        "speakers": 1
+      }
+    }
+  },
+  "split_seed": 4011,
+  "speaker_target_percent": {
+    "train": 70,
+    "dev": 15,
+    "test": 15
+  },
+  "temporal_congresses": {
+    "train": [
+      110,
+      111,
+      112
+    ],
+    "dev": [
+      113
+    ],
+    "test": [
+      114
+    ]
+  },
+  "temporal_dates_inclusive": {
+    "train": [
+      "2007-01-04",
+      "2013-01-02"
+    ],
+    "dev": [
+      "2013-01-03",
+      "2014-12-16"
+    ],
+    "test": [
+      "2015-01-06",
+      "2016-09-09"
+    ]
+  },
+  "support": {
+    "speaker_split": {
+      "train": {
+        "speeches": 13893,
+        "speakers": 610,
+        "labels": {
+          "D": {
+            "speeches": 7328,
+            "speakers": 292
+          },
+          "R": {
+            "speeches": 6565,
+            "speakers": 319
+          }
+        }
+      },
+      "dev": {
+        "speeches": 2965,
+        "speakers": 130,
+        "labels": {
+          "D": {
+            "speeches": 1567,
+            "speakers": 62
+          },
+          "R": {
+            "speeches": 1398,
+            "speakers": 68
+          }
+        }
+      },
+      "test": {
+        "speeches": 2966,
+        "speakers": 131,
+        "labels": {
+          "D": {
+            "speeches": 1568,
+            "speakers": 63
+          },
+          "R": {
+            "speeches": 1398,
+            "speakers": 68
+          }
+        }
+      }
+    },
+    "temporal_split": {
+      "train": {
+        "speeches": 11886,
+        "speakers": 709,
+        "labels": {
+          "D": {
+            "speeches": 6582,
+            "speakers": 348
+          },
+          "R": {
+            "speeches": 5304,
+            "speakers": 362
+          }
+        }
+      },
+      "dev": {
+        "speeches": 3968,
+        "speakers": 510,
+        "labels": {
+          "D": {
+            "speeches": 2029,
+            "speakers": 245
+          },
+          "R": {
+            "speeches": 1939,
+            "speakers": 265
+          }
+        }
+      },
+      "test": {
+        "speeches": 3970,
+        "speakers": 500,
+        "labels": {
+          "D": {
+            "speeches": 1852,
+            "speakers": 219
+          },
+          "R": {
+            "speeches": 2118,
+            "speakers": 281
+          }
+        }
+      }
+    }
+  },
+  "temporal_test_speaker_status": {
+    "seen_train": {
+      "speeches": 3118,
+      "speakers": 353,
+      "labels": {
+        "D": {
+          "speeches": 1504,
+          "speakers": 161
+        },
+        "R": {
+          "speeches": 1614,
+          "speakers": 192
+        }
+      }
+    },
+    "unseen_train": {
+      "speeches": 852,
+      "speakers": 147,
+      "labels": {
+        "D": {
+          "speeches": 348,
+          "speakers": 58
+        },
+        "R": {
+          "speeches": 504,
+          "speakers": 89
+        }
+      }
+    }
+  },
+  "pairwise_canonical_speaker_overlap_speaker_split": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  },
+  "partition_unit": "speech_id; every window inherits the speech partition",
+  "temporal_speaker_status_definition": "Seen means present in the scored temporal training speeches.",
+  "speaker_assignment": "Within each speaker's set of observed scored parties, reserve speaker counts by largest remainder; assign speakers by descending speech volume to balance speech counts, breaking ties with SHA-256 and the split seed.",
+  "corpus_sha256": "02649f7e5c7a39bb91f071a09d91a840214b9d8f6607131ae1f3ff1d09198db9",
+  "splits_sha256": "9a58aa913d5ec60e07574f580e9b70db189ae1e51becf59409fbfc8d58b8ff7f"
+}

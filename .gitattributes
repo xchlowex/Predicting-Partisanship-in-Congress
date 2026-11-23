@@ -1,0 +1,5 @@
+# These reproducibility artifacts are checked by byte-level SHA-256.
+data/week1/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+data/reference/** -text
+results/week1/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+data/week1/by_congress/*.gz binary

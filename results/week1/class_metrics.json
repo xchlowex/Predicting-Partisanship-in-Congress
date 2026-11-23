@@ -1,0 +1,722 @@
+[
+  {
+    "protocol": "speaker",
+    "partition": "dev",
+    "model": "majority",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1567,
+        0
+      ],
+      [
+        1398,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1567,
+        "precision": 0.5284991568296796,
+        "recall": 1.0,
+        "f1": 0.6915269196822594
+      },
+      "R": {
+        "support": 1398,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "speaker",
+    "partition": "test",
+    "model": "majority",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1568,
+        0
+      ],
+      [
+        1398,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1568,
+        "precision": 0.528658125421443,
+        "recall": 1.0,
+        "f1": 0.6916629907366564
+      },
+      "R": {
+        "support": 1398,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "speaker",
+    "partition": "dev",
+    "model": "tfidf_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1172,
+        395
+      ],
+      [
+        483,
+        915
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1567,
+        "precision": 0.7081570996978852,
+        "recall": 0.7479259731971921,
+        "f1": 0.7274984481688392
+      },
+      "R": {
+        "support": 1398,
+        "precision": 0.6984732824427481,
+        "recall": 0.6545064377682404,
+        "f1": 0.6757754800590842
+      }
+    }
+  },
+  {
+    "protocol": "speaker",
+    "partition": "test",
+    "model": "tfidf_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1201,
+        367
+      ],
+      [
+        484,
+        914
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1568,
+        "precision": 0.7127596439169139,
+        "recall": 0.7659438775510204,
+        "f1": 0.7383953273901015
+      },
+      "R": {
+        "support": 1398,
+        "precision": 0.7135050741608119,
+        "recall": 0.65379113018598,
+        "f1": 0.6823441582680104
+      }
+    }
+  },
+  {
+    "protocol": "speaker",
+    "partition": "dev",
+    "model": "year_chamber_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1080,
+        487
+      ],
+      [
+        979,
+        419
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1567,
+        "precision": 0.5245264691597863,
+        "recall": 0.6892150606253988,
+        "f1": 0.5956977385548814
+      },
+      "R": {
+        "support": 1398,
+        "precision": 0.4624724061810154,
+        "recall": 0.29971387696709584,
+        "f1": 0.3637152777777778
+      }
+    }
+  },
+  {
+    "protocol": "speaker",
+    "partition": "test",
+    "model": "year_chamber_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1145,
+        423
+      ],
+      [
+        917,
+        481
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1568,
+        "precision": 0.555286129970902,
+        "recall": 0.7302295918367347,
+        "f1": 0.6308539944903582
+      },
+      "R": {
+        "support": 1398,
+        "precision": 0.5320796460176991,
+        "recall": 0.3440629470672389,
+        "f1": 0.41789748045178104
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "majority",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        2029,
+        0
+      ],
+      [
+        1939,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 2029,
+        "precision": 0.5113407258064516,
+        "recall": 1.0,
+        "f1": 0.6766716691679173
+      },
+      "R": {
+        "support": 1939,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "majority",
+    "subgroup": "seen_train",
+    "confusion_gold_by_pred": [
+      [
+        1763,
+        0
+      ],
+      [
+        1676,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1763,
+        "precision": 0.5126490258796161,
+        "recall": 1.0,
+        "f1": 0.6778162245290273
+      },
+      "R": {
+        "support": 1676,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "majority",
+    "subgroup": "unseen_train",
+    "confusion_gold_by_pred": [
+      [
+        266,
+        0
+      ],
+      [
+        263,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 266,
+        "precision": 0.502835538752363,
+        "recall": 1.0,
+        "f1": 0.6691823899371069
+      },
+      "R": {
+        "support": 263,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "majority",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1852,
+        0
+      ],
+      [
+        2118,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1852,
+        "precision": 0.4664987405541562,
+        "recall": 1.0,
+        "f1": 0.6362074888354518
+      },
+      "R": {
+        "support": 2118,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "majority",
+    "subgroup": "seen_train",
+    "confusion_gold_by_pred": [
+      [
+        1504,
+        0
+      ],
+      [
+        1614,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1504,
+        "precision": 0.482360487491982,
+        "recall": 1.0,
+        "f1": 0.6508005192557335
+      },
+      "R": {
+        "support": 1614,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "majority",
+    "subgroup": "unseen_train",
+    "confusion_gold_by_pred": [
+      [
+        348,
+        0
+      ],
+      [
+        504,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 348,
+        "precision": 0.4084507042253521,
+        "recall": 1.0,
+        "f1": 0.58
+      },
+      "R": {
+        "support": 504,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "tfidf_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1663,
+        366
+      ],
+      [
+        841,
+        1098
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 2029,
+        "precision": 0.6641373801916933,
+        "recall": 0.8196155741744702,
+        "f1": 0.7337304213545114
+      },
+      "R": {
+        "support": 1939,
+        "precision": 0.75,
+        "recall": 0.5662712738525013,
+        "f1": 0.6453129591536879
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "tfidf_lr",
+    "subgroup": "seen_train",
+    "confusion_gold_by_pred": [
+      [
+        1428,
+        335
+      ],
+      [
+        732,
+        944
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1763,
+        "precision": 0.6611111111111111,
+        "recall": 0.8099829835507657,
+        "f1": 0.7280142747897017
+      },
+      "R": {
+        "support": 1676,
+        "precision": 0.7380766223612197,
+        "recall": 0.5632458233890215,
+        "f1": 0.638917089678511
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "tfidf_lr",
+    "subgroup": "unseen_train",
+    "confusion_gold_by_pred": [
+      [
+        235,
+        31
+      ],
+      [
+        109,
+        154
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 266,
+        "precision": 0.6831395348837209,
+        "recall": 0.8834586466165414,
+        "f1": 0.7704918032786885
+      },
+      "R": {
+        "support": 263,
+        "precision": 0.8324324324324325,
+        "recall": 0.5855513307984791,
+        "f1": 0.6875
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "tfidf_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1508,
+        344
+      ],
+      [
+        1183,
+        935
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1852,
+        "precision": 0.5603864734299517,
+        "recall": 0.8142548596112311,
+        "f1": 0.663878494386969
+      },
+      "R": {
+        "support": 2118,
+        "precision": 0.7310398749022674,
+        "recall": 0.4414542020774315,
+        "f1": 0.5504857226964969
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "tfidf_lr",
+    "subgroup": "seen_train",
+    "confusion_gold_by_pred": [
+      [
+        1224,
+        280
+      ],
+      [
+        877,
+        737
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1504,
+        "precision": 0.5825797239409805,
+        "recall": 0.8138297872340425,
+        "f1": 0.6790568654646325
+      },
+      "R": {
+        "support": 1614,
+        "precision": 0.7246804326450345,
+        "recall": 0.4566294919454771,
+        "f1": 0.5602432535157734
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "tfidf_lr",
+    "subgroup": "unseen_train",
+    "confusion_gold_by_pred": [
+      [
+        284,
+        64
+      ],
+      [
+        306,
+        198
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 348,
+        "precision": 0.48135593220338985,
+        "recall": 0.8160919540229885,
+        "f1": 0.605543710021322
+      },
+      "R": {
+        "support": 504,
+        "precision": 0.7557251908396947,
+        "recall": 0.39285714285714285,
+        "f1": 0.5169712793733682
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "year_chamber_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        2029,
+        0
+      ],
+      [
+        1939,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 2029,
+        "precision": 0.5113407258064516,
+        "recall": 1.0,
+        "f1": 0.6766716691679173
+      },
+      "R": {
+        "support": 1939,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "year_chamber_lr",
+    "subgroup": "seen_train",
+    "confusion_gold_by_pred": [
+      [
+        1763,
+        0
+      ],
+      [
+        1676,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1763,
+        "precision": 0.5126490258796161,
+        "recall": 1.0,
+        "f1": 0.6778162245290273
+      },
+      "R": {
+        "support": 1676,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "dev",
+    "model": "year_chamber_lr",
+    "subgroup": "unseen_train",
+    "confusion_gold_by_pred": [
+      [
+        266,
+        0
+      ],
+      [
+        263,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 266,
+        "precision": 0.502835538752363,
+        "recall": 1.0,
+        "f1": 0.6691823899371069
+      },
+      "R": {
+        "support": 263,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "year_chamber_lr",
+    "subgroup": "all",
+    "confusion_gold_by_pred": [
+      [
+        1852,
+        0
+      ],
+      [
+        2118,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1852,
+        "precision": 0.4664987405541562,
+        "recall": 1.0,
+        "f1": 0.6362074888354518
+      },
+      "R": {
+        "support": 2118,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "year_chamber_lr",
+    "subgroup": "seen_train",
+    "confusion_gold_by_pred": [
+      [
+        1504,
+        0
+      ],
+      [
+        1614,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 1504,
+        "precision": 0.482360487491982,
+        "recall": 1.0,
+        "f1": 0.6508005192557335
+      },
+      "R": {
+        "support": 1614,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  },
+  {
+    "protocol": "temporal",
+    "partition": "test",
+    "model": "year_chamber_lr",
+    "subgroup": "unseen_train",
+    "confusion_gold_by_pred": [
+      [
+        348,
+        0
+      ],
+      [
+        504,
+        0
+      ]
+    ],
+    "per_class": {
+      "D": {
+        "support": 348,
+        "precision": 0.4084507042253521,
+        "recall": 1.0,
+        "f1": 0.58
+      },
+      "R": {
+        "support": 504,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  }
+]

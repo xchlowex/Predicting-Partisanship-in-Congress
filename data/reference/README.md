@@ -1,0 +1,23 @@
+# Dated member and party reference
+
+`member_party_110_114.csv` is a frozen reference for the 110th–114th Congresses. Its 2,770 intervals cover 916 distinct BioGuide IDs. All intervals include the start date and exclude the end date. Membership in this reference alone does not admit a speech into the study.
+
+## Sources and derivation
+
+* EveryPolitician's ten House and Senate term rosters supply session membership, chamber, state, district, names, group and partial-term dates. The BioGuide ID is the seven-character identifier in each roster's linked congressional portrait filename. [Pinned US term rosters](https://github.com/everypolitician/everypolitician-data/tree/e6dc9b4adcd34af74aa9199bb98b2f43787d0b74/data/United_States_of_America)
+* The four pinned `unitedstates/congress-legislators` snapshots in `scripts/build_week1_roster.py` supply term dates, party, dated party-affiliation records where available, and name variants. Multiple historical snapshots preserve membership for people who had already left in the latest file. We use the newest available snapshot containing the same BioGuide ID, seat and term, intersected with the EveryPolitician service dates. Where no such term is available, the EveryPolitician interval supplies the service dates and party. Of the reference intervals, 343 rely on the term roster without a matching second snapshot, including six intervals with additional House or Senate switch evidence. These sources can draw on common underlying records. [Data schema and sources](https://github.com/unitedstates/congress-legislators)
+* All 14 retrieved source files matched their pinned Git blob IDs. To rebuild the derived CSV with the project Python and PyYAML, run `python scripts/build_week1_roster.py`. The command uses the sibling `stanford_raw/roster_inputs` cache, downloading any missing input from the pinned revision. Ordinary corpus preparation reads the frozen CSV offline. A second build from the original inputs produced a byte-identical CSV.
+
+## Speech-date checks
+
+For each Stanford speaker map row, the resolver looks up the Congress, state, chamber, House district, surname and given name. Its name normalization handles case, diacritics, punctuation and suffixes. A given initial can confirm a unique surname in the same seat and session. The speech date must fall in exactly one compatible identity/party assignment. For ordinary members, the dated party, EveryPolitician group and Stanford party initial must agree. Unresolved matches and nonvoting delegates receive an exclusion reason. The comprehensive reference retains upstream delegate values for traceability. For example, Gregorio Sablan's inconsistent source affiliations never yield an eligible speech under the voting-member rule. Four mid-session House-to-Senate movers (Wicker, Kirk, Heller and Markey) are absent from one House term roster apiece. House rows without a verified same-seat match are excluded rather than assigned their Senate identity by name alone.
+
+Three documented cases receive date-specific treatment:
+
+| Member | Applied rule | Source |
+| --- | --- | --- |
+| Arlen Specter, S000709 | Republican through 27 April 2009. The announcement and formal change span 28–29 April, which are omitted. Democrat from 30 April. The Republican assignment also corrects Stanford's label for the 110th Congress. | [Senate switch history](https://www.senate.gov/senators/SenatorsWhoChangedPartiesDuringSenateService.htm), [28 April statement](https://www.fec.gov/files/legal/aos/2009-19/1068141.pdf), [Senate record of 30 April](https://www.govinfo.gov/content/pkg/CRECB-2009-pt9/pdf/CRECB-2009-pt9-Pg11277.pdf) |
+| Parker Griffith, G000557 | Democrat through 21 December 2009. Republican from 22 December. The date corrects the session-wide Republican code for earlier speeches. | [House biography](https://history.house.gov/People/Detail/14273), [Congressional Directory before the switch](https://www.govinfo.gov/content/pkg/CDIR-2009-12-01/html/CDIR-2009-12-01-AL-H-5.htm), [contemporaneous switch report](https://rollcall.com/2009/12/22/griffith-officially-announces-switch-to-gop-slams-democratic-leaders/) |
+| Joseph Lieberman, L000304 | Independent Democrat during the included Senate service from 2007–2013. Keep this affiliation as a separate descriptive label. | [Senate switch history](https://www.senate.gov/senators/SenatorsWhoChangedPartiesDuringSenateService.htm) |
+
+Speakers outside the accepted dates, seats or label rules appear in the full-corpus exclusion counts. The reference verifies affiliation against available public records under these rules. It does not provide individual manual verification for every speech.

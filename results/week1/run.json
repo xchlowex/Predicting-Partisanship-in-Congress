@@ -1,0 +1,150 @@
+{
+  "classes_in_order": [
+    "D",
+    "R"
+  ],
+  "versions": {
+    "python": "3.14.0",
+    "sklearn": "1.8.0",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1"
+  },
+  "input_sha256": {
+    "corpus": "02649f7e5c7a39bb91f071a09d91a840214b9d8f6607131ae1f3ff1d09198db9",
+    "splits": "9a58aa913d5ec60e07574f580e9b70db189ae1e51becf59409fbfc8d58b8ff7f"
+  },
+  "output_sha256": {
+    "predictions.csv": "0753d7bed5e5e39a7e639e8597dbb6ef44c23ed22596c34c8efb444e8403d886",
+    "metrics.csv": "5d4ecc1b07ace3cb1ebba7d78b4c3e06daf4b8324c02c1d408ca511019ae89de",
+    "class_metrics.json": "15912bff934e9ee108f7648b8770c30dc3af049355b2e26084d177d6c3396147"
+  },
+  "majority": "Most frequent train label; probabilities equal training class frequencies.",
+  "tfidf_lr": {
+    "input": "full cleaned speech",
+    "vectorizer": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 3,
+      "max_features": 60000,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "lowercase": true
+    },
+    "logistic_regression": {
+      "C": 1.0,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "max_iter": 500,
+      "random_state": 4011
+    }
+  },
+  "year_chamber_lr": {
+    "input": [
+      "numeric year",
+      "is_senate"
+    ],
+    "scaling": "train mean and standard deviation",
+    "logistic_regression": {
+      "C": 1.0,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "max_iter": 500,
+      "random_state": 4011
+    }
+  },
+  "selection": "Configurations fixed before scoring. Only training data fit all models and transforms.",
+  "bootstrap": {
+    "unit": "canonical_speaker_id",
+    "replicates": 1000,
+    "seed": 4011,
+    "interval": "2.5th and 97.5th percentiles, conditional on fitted model"
+  },
+  "fitted": [
+    {
+      "protocol": "speaker",
+      "model": "majority",
+      "train_class_counts": {
+        "D": 7328,
+        "R": 6565
+      }
+    },
+    {
+      "protocol": "speaker",
+      "model": "tfidf_lr",
+      "train_class_counts": {
+        "D": 7328,
+        "R": 6565
+      },
+      "vocabulary_size": 60000
+    },
+    {
+      "protocol": "speaker",
+      "model": "year_chamber_lr",
+      "train_class_counts": {
+        "D": 7328,
+        "R": 6565
+      },
+      "feature_order": [
+        "year",
+        "is_senate"
+      ],
+      "training_mean": [
+        2011.493198013388,
+        0.37176995609299646
+      ],
+      "training_scale": [
+        2.867030979734789,
+        0.4832774108517155
+      ],
+      "republican_logit_coefficients": [
+        0.1572511803385675,
+        -0.057195959109588274
+      ],
+      "intercept": -0.11073958823456344
+    },
+    {
+      "protocol": "temporal",
+      "model": "majority",
+      "train_class_counts": {
+        "D": 6582,
+        "R": 5304
+      }
+    },
+    {
+      "protocol": "temporal",
+      "model": "tfidf_lr",
+      "train_class_counts": {
+        "D": 6582,
+        "R": 5304
+      },
+      "vocabulary_size": 60000
+    },
+    {
+      "protocol": "temporal",
+      "model": "year_chamber_lr",
+      "train_class_counts": {
+        "D": 6582,
+        "R": 5304
+      },
+      "feature_order": [
+        "year",
+        "is_senate"
+      ],
+      "training_mean": [
+        2009.4439676930842,
+        0.37598855796735653
+      ],
+      "training_scale": [
+        1.7355975084654722,
+        0.4843770868290357
+      ],
+      "republican_logit_coefficients": [
+        0.0164519195194692,
+        -0.058200905276341405
+      ],
+      "intercept": -0.21601110034097876
+    }
+  ]
+}

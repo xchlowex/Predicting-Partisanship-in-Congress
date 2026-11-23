@@ -1,0 +1,40 @@
+# Large source archives and intermediate data, including copies placed inside the repo.
+stanford_raw/
+hein-bound.zip
+hein-daily.zip
+vocabulary.zip
+*.zip.part
+/data/hein-bound/
+/data/hein-daily/
+/data/vocabulary/
+# Reconstructed byte-for-byte from the five tracked Congress archives.
+/data/week1/corpus.jsonl
+
+# Workstation environments and local configuration.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Week 2 training artifacts. Small final results live under results/week2/.
+/checkpoints/
+/models/
+/runs/
+/wandb/
+/logs/
+/cache/
+/.cache/
+checkpoint-*/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+pytorch_model*.bin
+tensorboard/
+events.out.tfevents.*
