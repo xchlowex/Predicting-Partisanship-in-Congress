@@ -1,0 +1,65 @@
+Congress: [99, 101, 104, 106, 109, 111, 114]
+Source:   hein-daily
+Files:    ['01291985.txt', '06271985.txt', '10051985.txt', '10091985.txt', '01311990.txt', '06121990.txt', '09101990.txt', '09141990.txt', '01111995.txt', '06221995.txt', '09281995.txt', '10121995.txt', '02012000.txt', '06162000.txt', '09202000.txt', '09262000.txt', '01312005.txt', '06212005.txt', '09272005.txt', '10032005.txt', '01212010.txt', '06092010.txt', '09202010.txt', '09242010.txt', '01132015.txt', '06102015.txt', '09172015.txt', '09252015.txt']
+
+Comparison of automatic and manual parsing
+==========================================
+Number of speeches (automatic):                   1471709
+Number of speeches (manual):                      319
+Number of speeches (manual, non-special speaker): 261
+
+--Manual speeches: all | Merge on: starting line number--
+Number of merges:                       318
+    % of manual speeches:               99.7%
+Number of speaker matches:              291
+    % of merged speeches:               91.5%
+Number of chamber matches:              313
+    % of merged speeches:               98.4%
+
+--Manual speeches: nonspecial speakers only | Merge on: starting line number--
+Number of merges:                       260
+    % of non-special manual speeches:   99.6%
+Number of speaker matches:              241
+    % of merged speeches:               92.7%
+
+--Manual speeches: all | Merge on: starting and ending line numbers--
+Number of merges:                       244
+    % of manual speeches:               76.5%
+Number of speaker matches:              222
+    % of merged speeches:               91.0%
+
+--Manual speeches: nonspecial speakers only | Merge on: starting and ending line numbers--
+Number of merges:                       201
+    % of non-special manual speeches:   77.0%
+Number of speaker matches:              186
+    % of merged speeches:               92.5%
+
+--Distribution of line_end_auto minus line_end_manual--
+    All speeches merged on first line
+        < -10:    2.2%
+        -[6-10]:  0.6%
+        -[3-5]:   0.3%
+        -2:       0.6%
+        -1:       0.3%
+        0:        76.7%
+        1:        7.5%
+        2:        6.0%
+        3-5:      2.2%
+        6-10:     0.9%
+        > 10:     2.5%
+    Nonspecial speeches merged on first line
+        < -10:    2.7%
+        -[6-10]:  0.8%
+        -[3-5]:   0.0%
+        -2:       0.4%
+        -1:       0.0%
+        0:        77.3%
+        1:        7.7%
+        2:        6.5%
+        3-5:      1.2%
+        6-10:     0.8%
+        > 10:     2.7%
+
+
+False positives: 4
+False positive rate: 1.2%

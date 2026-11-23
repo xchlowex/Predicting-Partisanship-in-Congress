@@ -1,0 +1,9 @@
+file|line_start|line_end|line_end_auto|line_end_manual|type
+01311990.txt|23665||23670.0|23666.0|line_end
+06121990.txt|49744||49816.0|49758.0|line_end
+06121990.txt|49823||49905.0|49825.0|line_end
+06121990.txt|49963||50006.0|50003.0|line_end
+06121990.txt|50104||50149.0|50143.0|line_end
+09101990.txt|31281||31386.0|31400.0|line_end
+09101990.txt|31401|31461.0|||manual_only
+09141990.txt|29344||29345.0|29386.0|line_end

@@ -1,0 +1,3 @@
+speech_id|chamber|date|number_within_file|speaker|first_name|last_name|state|gender|line_start|line_end|file|char_count|word_count
+1040135729|S|19951012|1231|Mr. MCCAIN|Unknown|MCCAIN|Unknown|M|76644|76795|10121995.txt|5056|794
+1040135730|S|19951012|1232|Mrs. FEINSTEIN|Unknown|FEINSTEIN|Unknown|F|77075|77207|10121995.txt|4231|636

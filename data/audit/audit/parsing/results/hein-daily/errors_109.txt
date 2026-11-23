@@ -1,0 +1,9 @@
+file|line_start|line_end|line_end_auto|line_end_manual|type
+06212005.txt|52373||52466.0|52453.0|line_end
+06212005.txt|52916||52947.0|53070.0|line_end
+09272005.txt|19521||19597.0|19585.0|line_end
+09272005.txt|19694||19696.0|19833.0|line_end
+09272005.txt|20194||20201.0|20197.0|line_end
+10032005.txt|26553||26560.0|26554.0|line_end
+10032005.txt|26855||26876.0|26990.0|line_end
+10032005.txt|26877|26921.0|||auto_only

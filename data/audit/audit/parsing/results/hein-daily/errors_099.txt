@@ -1,0 +1,7 @@
+file|line_start|line_end|line_end_auto|line_end_manual|type
+06271985.txt|102364||102416.0|102425.0|line_end
+06271985.txt|102813||102822.0|102847.0|line_end
+06271985.txt|102823|102831.0|||auto_only
+06271985.txt|102832|102847.0|||auto_only
+10091985.txt|50260|50260.0|||auto_only
+10091985.txt|50340||50378.0|50375.0|line_end

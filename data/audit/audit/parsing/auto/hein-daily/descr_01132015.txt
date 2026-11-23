@@ -1,0 +1,6 @@
+speech_id|chamber|date|number_within_file|speaker|first_name|last_name|state|gender|line_start|line_end|file|char_count|word_count
+1140002548|S|20150113|499|The PRESIDING OFFICER|Unknown|Unknown|Unknown|Special|37242|37249|01132015.txt|196|33
+1140002549|S|20150113|500|The PRESIDING OFFICER|Unknown|Unknown|Unknown|Special|37252|37253|01132015.txt|27|4
+1140002550|S|20150113|501|Mr. ALEXANDER|Unknown|ALEXANDER|Unknown|M|37255|37764|01132015.txt|16791|2930
+1140002551|S|20150113|502|The PRESIDING OFFICER|Unknown|Unknown|Unknown|Special|37889|37890|01132015.txt|28|4
+1140002552|S|20150113|503|Mrs. MURRAY|Unknown|MURRAY|Unknown|F|37891|38333|01132015.txt|14304|2494

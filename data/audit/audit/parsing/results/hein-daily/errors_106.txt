@@ -1,0 +1,2 @@
+file|line_start|line_end|line_end_auto|line_end_manual|type
+09262000.txt|63748||63753.0|63757.0|line_end

@@ -1,0 +1,5 @@
+speech_id|chamber|date|number_within_file|speaker|first_name|last_name|state|gender|line_start|line_end|file|char_count|word_count
+990001947|S|19850129|140|Mr. DURENBERGER|Unknown|DURENBERGER|Unknown|M|17338|17609|01291985.txt|8934|1368
+990001948|S|19850129|141|Mr. MOYNIHAN|Unknown|MOYNIHAN|Unknown|M|18010|18089|01291985.txt|2532|388
+990001949|S|19850129|142|Mr. HEINZ|Unknown|HEINZ|Unknown|M|18098|18176|01291985.txt|2722|422
+990001950|S|19850129|143|Mr. SASSER|Unknown|SASSER|Unknown|M|18177|18254|01291985.txt|2666|439

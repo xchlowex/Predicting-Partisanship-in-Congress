@@ -1,0 +1,4 @@
+speech_id|chamber|date|number_within_file|speaker|first_name|last_name|state|gender|line_start|line_end|file|char_count|word_count
+1040003305|S|19950111|380|Mr. WELLSTONE|Unknown|WELLSTONE|Unknown|M|24863|24890|01111995.txt|945|164
+1040003306|S|19950111|381|Mr. MOYNIHAN|Unknown|MOYNIHAN|Unknown|M|24896|24991|01111995.txt|2997|532
+1040003307|S|19950111|382|Mrs. BOXER|Unknown|BOXER|Unknown|F|24995|25136|01111995.txt|4824|817

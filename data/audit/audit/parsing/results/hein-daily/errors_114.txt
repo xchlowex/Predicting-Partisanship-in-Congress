@@ -1,0 +1,6 @@
+file|line_start|line_end|line_end_auto|line_end_manual|type
+01132015.txt|37242||37249.0|37244.0|line_end
+06102015.txt|64729||64757.0|64730.0|line_end
+06102015.txt|64940||64948.0|64941.0|line_end
+09172015.txt|22019||22024.0|22226.0|line_end
+09252015.txt|14488||14535.0|14523.0|line_end
