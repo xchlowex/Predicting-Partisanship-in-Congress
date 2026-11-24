@@ -1,0 +1,170 @@
+{
+  "bootstrap": {
+    "unit": "canonical_speaker_id",
+    "replicates": 1000,
+    "seed": 4011,
+    "interval": "percentile 95%"
+  },
+  "models": {
+    "text": "RoBERTa, text",
+    "chamber": "RoBERTa, text + chamber"
+  },
+  "comparison": [
+    {
+      "protocol": "temporal",
+      "partition": "dev",
+      "model": "text",
+      "speeches": 3968,
+      "speakers": 510,
+      "macro_f1": 0.7024901584172101,
+      "macro_f1_ci_low": 0.6787051116572184,
+      "macro_f1_ci_high": 0.7243878738353587,
+      "accuracy": 0.7101814516129032,
+      "accuracy_ci_low": 0.6860822954236613,
+      "accuracy_ci_high": 0.7358707454145541,
+      "confusion_gold_by_pred": [
+        [
+          1728,
+          301
+        ],
+        [
+          849,
+          1090
+        ]
+      ],
+      "per_class": {
+        "D": {
+          "support": 2029,
+          "precision": 0.670547147846333,
+          "recall": 0.8516510596352883,
+          "f1": 0.7503256621797655
+        },
+        "R": {
+          "support": 1939,
+          "precision": 0.783608914450036,
+          "recall": 0.5621454357916452,
+          "f1": 0.6546546546546547
+        }
+      }
+    },
+    {
+      "protocol": "temporal",
+      "partition": "dev",
+      "model": "chamber",
+      "speeches": 3968,
+      "speakers": 510,
+      "macro_f1": 0.7224695018126093,
+      "macro_f1_ci_low": 0.7029485868174213,
+      "macro_f1_ci_high": 0.7402416210180752,
+      "accuracy": 0.7230342741935484,
+      "accuracy_ci_low": 0.7043218385574231,
+      "accuracy_ci_high": 0.7419060984421204,
+      "confusion_gold_by_pred": [
+        [
+          1524,
+          505
+        ],
+        [
+          594,
+          1345
+        ]
+      ],
+      "per_class": {
+        "D": {
+          "support": 2029,
+          "precision": 0.7195467422096318,
+          "recall": 0.7511089206505668,
+          "f1": 0.7349891487822522
+        },
+        "R": {
+          "support": 1939,
+          "precision": 0.727027027027027,
+          "recall": 0.6936565239814337,
+          "f1": 0.7099498548429665
+        }
+      }
+    },
+    {
+      "protocol": "temporal",
+      "partition": "test",
+      "model": "text",
+      "speeches": 3970,
+      "speakers": 500,
+      "macro_f1": 0.6220760046733493,
+      "macro_f1_ci_low": 0.5910655149748059,
+      "macro_f1_ci_high": 0.6469744314109348,
+      "accuracy": 0.6319899244332494,
+      "accuracy_ci_low": 0.5970404186372394,
+      "accuracy_ci_high": 0.6625589762578671,
+      "confusion_gold_by_pred": [
+        [
+          1576,
+          276
+        ],
+        [
+          1185,
+          933
+        ]
+      ],
+      "per_class": {
+        "D": {
+          "support": 1852,
+          "precision": 0.5708076783773995,
+          "recall": 0.8509719222462203,
+          "f1": 0.6832863646217212
+        },
+        "R": {
+          "support": 2118,
+          "precision": 0.771712158808933,
+          "recall": 0.4405099150141643,
+          "f1": 0.5608656447249775
+        }
+      }
+    },
+    {
+      "protocol": "temporal",
+      "partition": "test",
+      "model": "chamber",
+      "speeches": 3970,
+      "speakers": 500,
+      "macro_f1": 0.6581555543312063,
+      "macro_f1_ci_low": 0.6318968304861865,
+      "macro_f1_ci_high": 0.6813691900495723,
+      "accuracy": 0.6586901763224181,
+      "accuracy_ci_low": 0.6319267498902391,
+      "accuracy_ci_high": 0.6834122989721302,
+      "confusion_gold_by_pred": [
+        [
+          1386,
+          466
+        ],
+        [
+          889,
+          1229
+        ]
+      ],
+      "per_class": {
+        "D": {
+          "support": 1852,
+          "precision": 0.6092307692307692,
+          "recall": 0.7483801295896328,
+          "f1": 0.671674339714078
+        },
+        "R": {
+          "support": 2118,
+          "precision": 0.7250737463126844,
+          "recall": 0.5802644003777149,
+          "f1": 0.6446367689483347
+        }
+      }
+    }
+  ],
+  "representative_cases": 80,
+  "lexical_cues": 100,
+  "source_prediction_sha256": {
+    "temporal_text_dev": "2512cd60d4e4e9ed5110c78c634ce26732b98e0304dd2f05856f12d90f3c627d",
+    "temporal_text_test": "adc7bfed7290571b9fa4d8dafc185ab4e6117a99b8046311b03f13ad78d46b25",
+    "temporal_chamber_dev": "58b1be50f3c28c6fa5351c8e0d76add27d01380453c5676985f16ff62c8584c6",
+    "temporal_chamber_test": "602d5817e63db9619fcf392729d32385c8ab26314de3819b59972715de44923b"
+  }
+}

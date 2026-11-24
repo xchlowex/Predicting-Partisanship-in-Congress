@@ -3,7 +3,17 @@ Group project for APAI4011. The goal is to predict the documented party affiliat
 
 ## Week 3 team: start here
 
-All 16 Week 2 runs are complete. The [handoff guide](reports/week2_handoff.md) explains how to verify the results on a CPU and match individual predictions to speech text for error analysis. The [comparison report](reports/week2_comparison.md) contains the main figure, baseline comparisons and results across seeds.
+All 16 Week 2 runs are complete. The [Week 3 handoff guide](reports/week3_handoff.md) explains how to verify the matched error analysis and inspect representative cases. The [Week 3 comparison report](reports/week3_comparison.md) contains the matched text-versus-chamber comparison, error groups and lexical cues.
+
+The Week 3 outputs are available offline:
+
+```powershell
+python -B scripts/week3_analysis.py
+python -B scripts/verify_week3.py
+python -B scripts/week3_plot.py
+```
+
+The analysis publishes matched development and test predictions, 80 representative speech cases and TF-IDF lexical cues under `results/week3/error_analysis/`. Party-name masking and phrase-removal inference are prepared in `scripts/week3_robustness.py`, but require the retained Week 2 checkpoints under `checkpoints/week2_formal/`.
 
 ## Week 1 handoff
 

@@ -1,0 +1,101 @@
+protocol,direction,rank,cue,coefficient
+temporal,D,1,republican,-3.3530552498106814
+temporal,D,2,the republicans,-2.1234357754256443
+temporal,D,3,bush,-2.1012400793337367
+temporal,D,4,representative,-1.8693631211448984
+temporal,D,5,the republican,-1.8673195368701503
+temporal,D,6,tax cuts,-1.822836256119728
+temporal,D,7,cuts,-1.821590781140012
+temporal,D,8,companies,-1.8163391987189734
+temporal,D,9,workers,-1.8015905004807677
+temporal,D,10,middle class,-1.7388220034238449
+temporal,D,11,insurance,-1.6693769678377985
+temporal,D,12,the bush,-1.6375231057958002
+temporal,D,13,investments,-1.6045261367959391
+temporal,D,14,connecticut,-1.5614966195264643
+temporal,D,15,republicans,-1.5360864211847656
+temporal,D,16,president ask,-1.49614467351872
+temporal,D,17,public,-1.485365928926374
+temporal,D,18,water,-1.4536875539938814
+temporal,D,19,major,-1.422569103265819
+temporal,D,20,families,-1.4195853662269344
+temporal,D,21,justice,-1.4157511205347442
+temporal,D,22,recovery,-1.4148425814186802
+temporal,D,23,crisis,-1.3897942075708127
+temporal,D,24,session,-1.3887038589292584
+temporal,D,25,bush administration,-1.3837598077090874
+temporal,R,1,spending,3.7984831466186666
+temporal,R,2,taxes,3.4535313785529147
+temporal,R,3,government,2.3355435286014283
+temporal,R,4,democrat,2.219006239733461
+temporal,R,5,freedom,1.937219056114919
+temporal,R,6,process,1.8758845837924945
+temporal,R,7,the majority,1.8739522311164456
+temporal,R,8,washington,1.8375916517429505
+temporal,R,9,majority,1.8053368015817421
+temporal,R,10,mr speaker,1.754689467453046
+temporal,R,11,for yielding,1.7478926046708279
+temporal,R,12,said,1.7097892604301441
+temporal,R,13,problem,1.7060289661598576
+temporal,R,14,taxpayer,1.6531065092337125
+temporal,R,15,actually,1.6421957525232715
+temporal,R,16,yielding,1.6223947106475156
+temporal,R,17,texas,1.6006018443525876
+temporal,R,18,american people,1.5901072956491706
+temporal,R,19,south,1.5632596482662544
+temporal,R,20,appreciate,1.5414479503547671
+temporal,R,21,the democrats,1.5245196534599268
+temporal,R,22,wyoming,1.5154647464905382
+temporal,R,23,georgia,1.515352466304628
+temporal,R,24,tennessee,1.5121204328895603
+temporal,R,25,free,1.484884581768357
+speaker,D,1,republican,-4.114641039188048
+speaker,D,2,the republicans,-2.3238137162984525
+speaker,D,3,the republican,-2.206434154193868
+speaker,D,4,bush,-2.173678211916496
+speaker,D,5,republicans,-2.1654083956829053
+speaker,D,6,representative,-2.039478400321647
+speaker,D,7,republican colleagues,-1.966281682266832
+speaker,D,8,middle class,-1.9522100982476562
+speaker,D,9,companies,-1.9505793330675643
+speaker,D,10,cuts,-1.8912147968458999
+speaker,D,11,connecticut,-1.8470835943215225
+speaker,D,12,violence,-1.787853458282953
+speaker,D,13,workers,-1.7860200521347154
+speaker,D,14,communities,-1.7646733361238949
+speaker,D,15,deficit,-1.6535826583228732
+speaker,D,16,new york,-1.6521919275253465
+speaker,D,17,climate,-1.6280367356372367
+speaker,D,18,gun,-1.6147012783744648
+speaker,D,19,funding,-1.6068721377423403
+speaker,D,20,my republican,-1.6007446095640079
+speaker,D,21,york,-1.5833427414194143
+speaker,D,22,crisis,-1.5826517121537742
+speaker,D,23,public,-1.4983298258318558
+speaker,D,24,clean,-1.4631351037684641
+speaker,D,25,us,-1.4437129744598745
+speaker,R,1,2015 at,3.4546690947895566
+speaker,R,2,spending,3.3366611928536942
+speaker,R,3,taxes,3.2157598864377097
+speaker,R,4,obamacare,3.0071500969330085
+speaker,R,5,actually,2.731888582947473
+speaker,R,6,regulations,2.230297035506431
+speaker,R,7,tennessee,2.1493755738204317
+speaker,R,8,democrat,2.1280138705155536
+speaker,R,9,mr speaker,2.0535333380413374
+speaker,R,10,washington,2.04276530364744
+speaker,R,11,2015,2.031547602093438
+speaker,R,12,2016,2.026517687255457
+speaker,R,13,obama,1.9650528677502543
+speaker,R,14,freedom,1.9180229365332013
+speaker,R,15,wyoming,1.8980263027237345
+speaker,R,16,appreciate,1.8714585702748803
+speaker,R,17,government,1.835642322963827
+speaker,R,18,taxpayer,1.813682857095153
+speaker,R,19,texas,1.792868465041738
+speaker,R,20,to recognize,1.7801081014604108
+speaker,R,21,problem,1.7146283547559755
+speaker,R,22,today,1.7082000460436717
+speaker,R,23,trillion,1.7065477567419791
+speaker,R,24,the democrats,1.6934400597074684
+speaker,R,25,taxpayers,1.6434698615610868
