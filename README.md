@@ -13,7 +13,7 @@ python -B scripts/verify_week3.py
 python -B scripts/week3_plot.py
 ```
 
-The analysis publishes matched development and test predictions, 80 representative speech cases and TF-IDF lexical cues under `results/week3/error_analysis/`. Party-name masking and phrase-removal inference are prepared in `scripts/week3_robustness.py`, but require the retained Week 2 checkpoints under `checkpoints/week2_formal/`.
+The analysis publishes matched development and test predictions, 80 representative speech cases and TF-IDF lexical cues under `results/week3/error_analysis/`. For party-name masking and phrase removal, follow the [checkpoint installation and edited-speech inference guide](reports/week3_weights.md). Start with the two seed-4011 chronological models used in the matched comparison.
 
 ## Week 1 handoff
 

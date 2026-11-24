@@ -27,4 +27,4 @@ The category rules are determined from development speeches. Apply those fixed r
 
 ## Remaining Week 3 work
 
-Complete party-name masking and phrase-removal inference on the retained formal checkpoints. Add the results to this report, preserve the held-out test as the final check, and prepare the final presentation.
+Use the [checkpoint and inference guide](week3_weights.md) to install the selected models and score original, masked and phrase-removed speeches. Add the results to this report, preserve the held-out test as the final check, and prepare the final presentation.
