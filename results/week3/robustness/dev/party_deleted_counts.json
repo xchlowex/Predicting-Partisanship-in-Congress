@@ -1,0 +1,10 @@
+{
+  "run": "temporal_text_s4011",
+  "speeches": 3968,
+  "edits": {
+    "party_deleted": {
+      "changed": 957,
+      "kept_because_empty": 0
+    }
+  }
+}

@@ -100,13 +100,20 @@ def main():
     parser.add_argument("--run", required=True, help="Published Week 2 run, e.g. speaker_both_s4011")
     parser.add_argument("--input", type=Path, required=True, help="UTF-8 JSONL: speech_id, text, year, chamber")
     parser.add_argument("--output", type=Path, required=True, help="New predictions CSV file")
-    parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
+    parser.add_argument("--device", choices=("auto", "cpu", "cuda", "mps"), default="auto")
     args = parser.parse_args()
     device = args.device
     if device == "auto":
-        device = "cuda" if torch.cuda.is_available() else "cpu"
+        if torch.cuda.is_available():
+            device = "cuda"
+        elif torch.backends.mps.is_available():
+            device = "mps"
+        else:
+            device = "cpu"
     if device == "cuda" and not torch.cuda.is_available():
-        parser.error("CUDA is unavailable. Choose --device cpu or auto.")
+        parser.error("CUDA is unavailable. Choose --device mps, cpu, or auto.")
+    if device == "mps" and not torch.backends.mps.is_available():
+        parser.error("The Apple GPU is unavailable. Choose --device cpu or auto.")
     score(args.run, args.input, args.output, torch.device(device))
 
 

@@ -1,0 +1,417 @@
+{
+  "phase": "dev",
+  "word_count": {
+    "min": 40,
+    "q1": 146.0,
+    "median": 251.5,
+    "q3": 542.75,
+    "max": 8020
+  },
+  "cuts": {
+    "short": "word count at or below quartile 1 (146)",
+    "long": "word count at or above quartile 3 (543)",
+    "close": "confidence < 0.60",
+    "sure": "confidence >= 0.90",
+    "party_mention": "frozen party-name expression"
+  },
+  "models": {
+    "text": {
+      "edits": {
+        "original": {
+          "n": 3968,
+          "accuracy": 0.7094254032258065,
+          "macro_f1": 0.7017388393373734,
+          "errors": 1153,
+          "flips_vs_original": 0,
+          "D_to_R": 0,
+          "R_to_D": 0,
+          "correct_to_wrong": 0,
+          "wrong_to_correct": 0
+        },
+        "party_masked": {
+          "n": 3968,
+          "accuracy": 0.7038810483870968,
+          "macro_f1": 0.6972094549568866,
+          "errors": 1175,
+          "flips_vs_original": 70,
+          "D_to_R": 59,
+          "R_to_D": 11,
+          "correct_to_wrong": 46,
+          "wrong_to_correct": 24
+        },
+        "heading_removed": {
+          "n": 3968,
+          "accuracy": 0.7109375,
+          "macro_f1": 0.7043341047690972,
+          "errors": 1147,
+          "flips_vs_original": 50,
+          "D_to_R": 47,
+          "R_to_D": 3,
+          "correct_to_wrong": 22,
+          "wrong_to_correct": 28
+        },
+        "first_sentence_removed": {
+          "n": 3968,
+          "accuracy": 0.7084173387096774,
+          "macro_f1": 0.701383290112496,
+          "errors": 1157,
+          "flips_vs_original": 114,
+          "D_to_R": 71,
+          "R_to_D": 43,
+          "correct_to_wrong": 59,
+          "wrong_to_correct": 55
+        },
+        "last_sentence_removed": {
+          "n": 3968,
+          "accuracy": 0.7089213709677419,
+          "macro_f1": 0.7010215735548029,
+          "errors": 1155,
+          "flips_vs_original": 140,
+          "D_to_R": 66,
+          "R_to_D": 74,
+          "correct_to_wrong": 71,
+          "wrong_to_correct": 69
+        }
+      },
+      "slices": {
+        "all": {
+          "n": 3968,
+          "accuracy": 0.7094254032258065,
+          "macro_f1": 0.7017388393373734,
+          "errors": 1153
+        },
+        "short": {
+          "n": 998,
+          "accuracy": 0.6442885771543087,
+          "macro_f1": 0.6145984607435206,
+          "errors": 355
+        },
+        "long": {
+          "n": 992,
+          "accuracy": 0.7842741935483871,
+          "macro_f1": 0.7805046507107378,
+          "errors": 214
+        },
+        "house": {
+          "n": 2538,
+          "accuracy": 0.6800630417651694,
+          "macro_f1": 0.6746287413993994,
+          "errors": 812
+        },
+        "senate": {
+          "n": 1430,
+          "accuracy": 0.7615384615384615,
+          "macro_f1": 0.7498588040847043,
+          "errors": 341
+        },
+        "party_mention": {
+          "n": 957,
+          "accuracy": 0.7847439916405433,
+          "macro_f1": 0.7719108663457979,
+          "errors": 206
+        },
+        "no_party_mention": {
+          "n": 3011,
+          "accuracy": 0.6854865493191631,
+          "macro_f1": 0.679544811143961,
+          "errors": 947
+        },
+        "close": {
+          "n": 546,
+          "accuracy": 0.5659340659340659,
+          "macro_f1": 0.5634725993894107,
+          "errors": 237
+        },
+        "sure": {
+          "n": 1846,
+          "accuracy": 0.8456121343445288,
+          "macro_f1": 0.8322500418490087,
+          "errors": 285
+        }
+      },
+      "sure_error_party_mentions": 50,
+      "sure_errors": 285,
+      "top_errors": [
+        {
+          "speech_id": "hein-daily:1130057577",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9979315996170044,
+          "words": 56,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. I ask unanimous consent that the order of the House of January 3. 2013. regarding morninghour debate not apply tomorrow. and when the House adjourns on Thursday. October 24. 2013. it adjourn to meet on Monday. October 28. 2013. when it shall convene at noon for morninghour debate and 2 p.m. for legislative business."
+        },
+        {
+          "speech_id": "hein-daily:1130082711",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9979131817817688,
+          "words": 52,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. I ask unanimous consent that when the House adjourns today. it adjourn to meet at 11 a.m. tomorrow. and when the House adjourns on that day. it adjourn to meet on Tuesday. April 1. 2014. when it shall convene at noon for morninghour debate and 2 p.m. for legislative business."
+        },
+        {
+          "speech_id": "hein-daily:1130020385",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9961673617362976,
+          "words": 183,
+          "chamber": "House",
+          "party_mention": true,
+          "excerpt": "First. I thank the gentleman from Maryland. the Democratic whip. for yielding. Mr. Speaker. on Monday. the House will meet at 2 p.m. in pro forma session. On Tuesday. the House will meet at noon for morning hour and 2 p.m. for legislative business. Votes will be postponed until 6:30 p.m. On Wednesday and Thursday. the House will meet at 10 a.m. for morning h"
+        },
+        {
+          "speech_id": "hein-daily:1130047604",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9950157999992371,
+          "words": 1003,
+          "chamber": "House",
+          "party_mention": true,
+          "excerpt": "thank you for your leadership of the committee. as well. I know you tried to bring a bipartisan bill to the floor. What happened after that. I wont go into. I also want to salute COLLIN PETERSON. our colleague on the committee. We need a farm bill. We want to have a good farm bill for our farmers. for our ranchers. for food security. for our country. Hopeful"
+        },
+        {
+          "speech_id": "hein-daily:1130016368",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9942871928215027,
+          "words": 250,
+          "chamber": "House",
+          "party_mention": true,
+          "excerpt": "I thank the gentleman from Maryland. the Democratic whip. for yielding. Mr. Speaker. on Monday. the House is not in session. On Tuesday. the House will meet at noon for morning hour and 2 p.m. for legislative business. Votes will be postponed until 6:30 p.m. On Wednesday and Thursday. the House will meet at 10 a.m. for morning hour and noon for legislative b"
+        },
+        {
+          "speech_id": "hein-daily:1130103424",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.993873119354248,
+          "words": 111,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Madam Chairman. in closing. this is about American jobs. it is about developing our energy. it is about educational opportunities. it is about promoting STEM within our colleges and universities. it is about providing opportunities in Historically Black Colleges and Universities throughout the United States. and it is about providing opportunities for our ve"
+        },
+        {
+          "speech_id": "hein-daily:1130069226",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9937216639518738,
+          "words": 157,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. I have to acknowledge that I am a little disheartened that my friends across the aisle are encouraging the defeat of a rule that would bring a vote to protect consumers from having the CFPB collect financial data on them. I know my friends want to talk about flood insurance. and we are. no doubt. going to have that day to have that conversation."
+        },
+        {
+          "speech_id": "hein-daily:1130079367",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9937095046043396,
+          "words": 544,
+          "chamber": "House",
+          "party_mention": true,
+          "excerpt": "on the War Powers Act that could have brought us together. That is a legitimate subject. The reason why this legislation before us is such a waste of time is because it does not reflect deliberative process. It does not reflect any kind of bipartisan cooperation. It is a political press release. It is a waste of taxpayers money. I will say to the gentleman f"
+        }
+      ]
+    },
+    "chamber": {
+      "edits": {
+        "original": {
+          "n": 3968,
+          "accuracy": 0.7235383064516129,
+          "macro_f1": 0.7229745618639057,
+          "errors": 1097,
+          "flips_vs_original": 0,
+          "D_to_R": 0,
+          "R_to_D": 0,
+          "correct_to_wrong": 0,
+          "wrong_to_correct": 0
+        },
+        "party_masked": {
+          "n": 3968,
+          "accuracy": 0.7076612903225806,
+          "macro_f1": 0.707482863501578,
+          "errors": 1160,
+          "flips_vs_original": 89,
+          "D_to_R": 85,
+          "R_to_D": 4,
+          "correct_to_wrong": 76,
+          "wrong_to_correct": 13
+        },
+        "heading_removed": {
+          "n": 3968,
+          "accuracy": 0.7222782258064516,
+          "macro_f1": 0.7217307723636838,
+          "errors": 1102,
+          "flips_vs_original": 43,
+          "D_to_R": 23,
+          "R_to_D": 20,
+          "correct_to_wrong": 24,
+          "wrong_to_correct": 19
+        },
+        "first_sentence_removed": {
+          "n": 3968,
+          "accuracy": 0.7207661290322581,
+          "macro_f1": 0.720190338672904,
+          "errors": 1108,
+          "flips_vs_original": 139,
+          "D_to_R": 69,
+          "R_to_D": 70,
+          "correct_to_wrong": 75,
+          "wrong_to_correct": 64
+        },
+        "last_sentence_removed": {
+          "n": 3968,
+          "accuracy": 0.7207661290322581,
+          "macro_f1": 0.7202156948992393,
+          "errors": 1108,
+          "flips_vs_original": 173,
+          "D_to_R": 88,
+          "R_to_D": 85,
+          "correct_to_wrong": 92,
+          "wrong_to_correct": 81
+        }
+      },
+      "slices": {
+        "all": {
+          "n": 3968,
+          "accuracy": 0.7235383064516129,
+          "macro_f1": 0.7229745618639057,
+          "errors": 1097
+        },
+        "short": {
+          "n": 998,
+          "accuracy": 0.6593186372745491,
+          "macro_f1": 0.6512282865659369,
+          "errors": 340
+        },
+        "long": {
+          "n": 992,
+          "accuracy": 0.8044354838709677,
+          "macro_f1": 0.8041775881998601,
+          "errors": 194
+        },
+        "house": {
+          "n": 2538,
+          "accuracy": 0.6918833727344366,
+          "macro_f1": 0.6918642381576652,
+          "errors": 782
+        },
+        "senate": {
+          "n": 1430,
+          "accuracy": 0.7797202797202797,
+          "macro_f1": 0.7769628826031048,
+          "errors": 315
+        },
+        "party_mention": {
+          "n": 957,
+          "accuracy": 0.800417972831766,
+          "macro_f1": 0.7957944974545113,
+          "errors": 191
+        },
+        "no_party_mention": {
+          "n": 3011,
+          "accuracy": 0.6991032879442046,
+          "macro_f1": 0.6990626257598543,
+          "errors": 906
+        },
+        "close": {
+          "n": 647,
+          "accuracy": 0.58887171561051,
+          "macro_f1": 0.5875227686703097,
+          "errors": 266
+        },
+        "sure": {
+          "n": 1726,
+          "accuracy": 0.8516801853997682,
+          "macro_f1": 0.8496204571938881,
+          "errors": 256
+        }
+      },
+      "sure_error_party_mentions": 42,
+      "sure_errors": 256,
+      "top_errors": [
+        {
+          "speech_id": "hein-daily:1130082711",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.997805655002594,
+          "words": 52,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. I ask unanimous consent that when the House adjourns today. it adjourn to meet at 11 a.m. tomorrow. and when the House adjourns on that day. it adjourn to meet on Tuesday. April 1. 2014. when it shall convene at noon for morninghour debate and 2 p.m. for legislative business."
+        },
+        {
+          "speech_id": "hein-daily:1130057577",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9977869987487793,
+          "words": 56,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. I ask unanimous consent that the order of the House of January 3. 2013. regarding morninghour debate not apply tomorrow. and when the House adjourns on Thursday. October 24. 2013. it adjourn to meet on Monday. October 28. 2013. when it shall convene at noon for morninghour debate and 2 p.m. for legislative business."
+        },
+        {
+          "speech_id": "hein-daily:1130126568",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9973656535148621,
+          "words": 62,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. I ask unanimous consent that when the House adjourns today on a motion offered pursuant to this order. it adjourn to meet at noon on Tuesday. December 16. 2014. unless it sooner has received a message from the Senate transmitting its concurrence in H. Con. Res. 125. in which case the House shall stand adjourned pursuant to that concurrent resolu"
+        },
+        {
+          "speech_id": "hein-daily:1130020385",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9972443580627441,
+          "words": 183,
+          "chamber": "House",
+          "party_mention": true,
+          "excerpt": "First. I thank the gentleman from Maryland. the Democratic whip. for yielding. Mr. Speaker. on Monday. the House will meet at 2 p.m. in pro forma session. On Tuesday. the House will meet at noon for morning hour and 2 p.m. for legislative business. Votes will be postponed until 6:30 p.m. On Wednesday and Thursday. the House will meet at 10 a.m. for morning h"
+        },
+        {
+          "speech_id": "hein-daily:1130020058",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9964399933815002,
+          "words": 54,
+          "chamber": "Senate",
+          "party_mention": false,
+          "excerpt": "Mr. President. I ask unanimous consent that the Senate proceed to the consideration of S. Res. 133 submitted earlier today. I further ask unanimous consent that the resolution be agreed to. the preamble be agreed to. and the motion to reconsider be made and laid upon the table. with no intervening action or debate."
+        },
+        {
+          "speech_id": "hein-daily:1130020382",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9961894154548645,
+          "words": 43,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. I missed rollcall vote 142 to H.R. 807 taken on May 9. 2013. Had I been present for this vote. I would have voted \"aye.\" I was not present for this vote due to a speaking engagement at Texas A&M University."
+        },
+        {
+          "speech_id": "hein-daily:1130101666",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9954528212547302,
+          "words": 243,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. on Monday. the House will meet at noon for morninghour and 2 p.m. for legislative business. Votes will be postponed until 6:30 p.m. On Tuesday and Wednesday. the House will meet at 10 a.m. for morninghour and noon for legislative business. On Thursday. the House will meet at 9 a.m. for legislative business. Last votes of the week are expected no"
+        },
+        {
+          "speech_id": "hein-daily:1130064035",
+          "gold": "R",
+          "predicted": "D",
+          "confidence": 0.9944735169410706,
+          "words": 79,
+          "chamber": "House",
+          "party_mention": false,
+          "excerpt": "Mr. Speaker. due to travel arrangements. I missed the following rollcall votes: No. 612 through No. 614 on December 2. 2013. If present. I would have voted: rollcall vote No. 612H.R. 3547. The Space Launch Liability Indemnification Extension Act. \"aye\". rollcall vote No. 613H.R. 3588. To amend the Safe Drinking Water Act to exempt fire hydrants from the proh"
+        }
+      ]
+    }
+  }
+}

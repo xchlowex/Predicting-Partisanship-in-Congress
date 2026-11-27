@@ -1,0 +1,1048 @@
+{
+  "cuts": {
+    "short_max_words": 146,
+    "long_min_words": 543
+  },
+  "recall": [
+    {
+      "phase": "dev",
+      "model": "text",
+      "n": 3968,
+      "accuracy": 0.7094254032258065,
+      "macro_f1": 0.7017388393373734,
+      "per_class": {
+        "D": {
+          "support": 2029,
+          "precision": 0.6700310559006211,
+          "recall": 0.85066535239034,
+          "f1": 0.7496199782844734,
+          "false_negatives": 303
+        },
+        "R": {
+          "support": 1939,
+          "precision": 0.7823275862068966,
+          "recall": 0.5616297060340382,
+          "f1": 0.6538577003902732,
+          "false_negatives": 850
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "n": 3968,
+      "accuracy": 0.7235383064516129,
+      "macro_f1": 0.7229745618639057,
+      "per_class": {
+        "D": {
+          "support": 2029,
+          "precision": 0.7200188857412654,
+          "recall": 0.7516017742730409,
+          "f1": 0.7354714251265975,
+          "false_negatives": 504
+        },
+        "R": {
+          "support": 1939,
+          "precision": 0.7275675675675676,
+          "recall": 0.6941722537390408,
+          "f1": 0.710477698601214,
+          "false_negatives": 593
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "n": 3970,
+      "accuracy": 0.6307304785894207,
+      "macro_f1": 0.6206870572090588,
+      "per_class": {
+        "D": {
+          "support": 1852,
+          "precision": 0.5698263386396527,
+          "recall": 0.8504319654427646,
+          "f1": 0.6824090121317158,
+          "false_negatives": 277
+        },
+        "R": {
+          "support": 2118,
+          "precision": 0.7703150912106136,
+          "recall": 0.43862134088762983,
+          "f1": 0.5589651022864018,
+          "false_negatives": 1189
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "n": 3970,
+      "accuracy": 0.6576826196473552,
+      "macro_f1": 0.657186678009841,
+      "per_class": {
+        "D": {
+          "support": 1852,
+          "precision": 0.6086381665932129,
+          "recall": 0.7456803455723542,
+          "f1": 0.6702256733802476,
+          "false_negatives": 471
+        },
+        "R": {
+          "support": 2118,
+          "precision": 0.7231040564373897,
+          "recall": 0.5807365439093485,
+          "f1": 0.6441476826394344,
+          "false_negatives": 888
+        }
+      }
+    }
+  ],
+  "slices": [
+    {
+      "phase": "dev",
+      "model": "text",
+      "slice": "all",
+      "speakers": 510,
+      "n": 3968,
+      "accuracy": 0.7094254032258065,
+      "macro_f1": 0.7017388393373734,
+      "per_class": {
+        "D": {
+          "support": 2029,
+          "precision": 0.6700310559006211,
+          "recall": 0.85066535239034,
+          "f1": 0.7496199782844734,
+          "false_negatives": 303
+        },
+        "R": {
+          "support": 1939,
+          "precision": 0.7823275862068966,
+          "recall": 0.5616297060340382,
+          "f1": 0.6538577003902732,
+          "false_negatives": 850
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "text",
+      "slice": "short",
+      "speakers": 341,
+      "n": 998,
+      "accuracy": 0.6442885771543087,
+      "macro_f1": 0.6145984607435206,
+      "per_class": {
+        "D": {
+          "support": 521,
+          "precision": 0.610079575596817,
+          "recall": 0.8829174664107485,
+          "f1": 0.7215686274509804,
+          "false_negatives": 61
+        },
+        "R": {
+          "support": 477,
+          "precision": 0.75,
+          "recall": 0.3836477987421384,
+          "f1": 0.5076282940360609,
+          "false_negatives": 294
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "text",
+      "slice": "long",
+      "speakers": 291,
+      "n": 992,
+      "accuracy": 0.7842741935483871,
+      "macro_f1": 0.7805046507107378,
+      "per_class": {
+        "D": {
+          "support": 525,
+          "precision": 0.7604690117252931,
+          "recall": 0.8647619047619047,
+          "f1": 0.8092691622103387,
+          "false_negatives": 71
+        },
+        "R": {
+          "support": 467,
+          "precision": 0.8202531645569621,
+          "recall": 0.6937901498929336,
+          "f1": 0.751740139211137,
+          "false_negatives": 143
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "text",
+      "slice": "house",
+      "speakers": 411,
+      "n": 2538,
+      "accuracy": 0.6800630417651694,
+      "macro_f1": 0.6746287413993994,
+      "per_class": {
+        "D": {
+          "support": 1226,
+          "precision": 0.626219512195122,
+          "recall": 0.8376835236541599,
+          "f1": 0.7166782972784368,
+          "false_negatives": 199
+        },
+        "R": {
+          "support": 1312,
+          "precision": 0.7783964365256125,
+          "recall": 0.5327743902439024,
+          "f1": 0.632579185520362,
+          "false_negatives": 613
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "text",
+      "slice": "senate",
+      "speakers": 99,
+      "n": 1430,
+      "accuracy": 0.7615384615384615,
+      "macro_f1": 0.7498588040847043,
+      "per_class": {
+        "D": {
+          "support": 803,
+          "precision": 0.7467948717948718,
+          "recall": 0.8704856787048568,
+          "f1": 0.8039102932719955,
+          "false_negatives": 104
+        },
+        "R": {
+          "support": 627,
+          "precision": 0.7894736842105263,
+          "recall": 0.6220095693779905,
+          "f1": 0.695807314897413,
+          "false_negatives": 237
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "text",
+      "slice": "party_mention",
+      "speakers": 321,
+      "n": 957,
+      "accuracy": 0.7847439916405433,
+      "macro_f1": 0.7719108663457979,
+      "per_class": {
+        "D": {
+          "support": 545,
+          "precision": 0.7652582159624414,
+          "recall": 0.8972477064220183,
+          "f1": 0.8260135135135135,
+          "false_negatives": 56
+        },
+        "R": {
+          "support": 412,
+          "precision": 0.8238993710691824,
+          "recall": 0.6359223300970874,
+          "f1": 0.7178082191780824,
+          "false_negatives": 150
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "text",
+      "slice": "no_party_mention",
+      "speakers": 493,
+      "n": 3011,
+      "accuracy": 0.6854865493191631,
+      "macro_f1": 0.679544811143961,
+      "per_class": {
+        "D": {
+          "support": 1484,
+          "precision": 0.638616417139907,
+          "recall": 0.8335579514824798,
+          "f1": 0.7231803566208711,
+          "false_negatives": 247
+        },
+        "R": {
+          "support": 1527,
+          "precision": 0.7700186219739292,
+          "recall": 0.5415848068107401,
+          "f1": 0.6359092656670511,
+          "false_negatives": 700
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "slice": "all",
+      "speakers": 510,
+      "n": 3968,
+      "accuracy": 0.7235383064516129,
+      "macro_f1": 0.7229745618639057,
+      "per_class": {
+        "D": {
+          "support": 2029,
+          "precision": 0.7200188857412654,
+          "recall": 0.7516017742730409,
+          "f1": 0.7354714251265975,
+          "false_negatives": 504
+        },
+        "R": {
+          "support": 1939,
+          "precision": 0.7275675675675676,
+          "recall": 0.6941722537390408,
+          "f1": 0.710477698601214,
+          "false_negatives": 593
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "slice": "short",
+      "speakers": 341,
+      "n": 998,
+      "accuracy": 0.6593186372745491,
+      "macro_f1": 0.6512282865659369,
+      "per_class": {
+        "D": {
+          "support": 521,
+          "precision": 0.643879173290938,
+          "recall": 0.7773512476007678,
+          "f1": 0.7043478260869566,
+          "false_negatives": 116
+        },
+        "R": {
+          "support": 477,
+          "precision": 0.6856368563685636,
+          "recall": 0.5303983228511531,
+          "f1": 0.5981087470449172,
+          "false_negatives": 224
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "slice": "long",
+      "speakers": 291,
+      "n": 992,
+      "accuracy": 0.8044354838709677,
+      "macro_f1": 0.8041775881998601,
+      "per_class": {
+        "D": {
+          "support": 525,
+          "precision": 0.8290258449304175,
+          "recall": 0.7942857142857143,
+          "f1": 0.811284046692607,
+          "false_negatives": 108
+        },
+        "R": {
+          "support": 467,
+          "precision": 0.7791411042944786,
+          "recall": 0.815845824411135,
+          "f1": 0.797071129707113,
+          "false_negatives": 86
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "slice": "house",
+      "speakers": 411,
+      "n": 2538,
+      "accuracy": 0.6918833727344366,
+      "macro_f1": 0.6918642381576652,
+      "per_class": {
+        "D": {
+          "support": 1226,
+          "precision": 0.6666666666666666,
+          "recall": 0.7243066884176182,
+          "f1": 0.6942924159499609,
+          "false_negatives": 338
+        },
+        "R": {
+          "support": 1312,
+          "precision": 0.7197346600331676,
+          "recall": 0.6615853658536586,
+          "f1": 0.6894360603653694,
+          "false_negatives": 444
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "slice": "senate",
+      "speakers": 99,
+      "n": 1430,
+      "accuracy": 0.7797202797202797,
+      "macro_f1": 0.7769628826031048,
+      "per_class": {
+        "D": {
+          "support": 803,
+          "precision": 0.8104325699745547,
+          "recall": 0.7932752179327521,
+          "f1": 0.8017621145374448,
+          "false_negatives": 166
+        },
+        "R": {
+          "support": 627,
+          "precision": 0.7422360248447205,
+          "recall": 0.7623604465709729,
+          "f1": 0.7521636506687647,
+          "false_negatives": 149
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "slice": "party_mention",
+      "speakers": 321,
+      "n": 957,
+      "accuracy": 0.800417972831766,
+      "macro_f1": 0.7957944974545113,
+      "per_class": {
+        "D": {
+          "support": 545,
+          "precision": 0.8183453237410072,
+          "recall": 0.8348623853211009,
+          "f1": 0.8265213442325159,
+          "false_negatives": 90
+        },
+        "R": {
+          "support": 412,
+          "precision": 0.7755610972568578,
+          "recall": 0.7548543689320388,
+          "f1": 0.7650676506765067,
+          "false_negatives": 101
+        }
+      }
+    },
+    {
+      "phase": "dev",
+      "model": "chamber",
+      "slice": "no_party_mention",
+      "speakers": 493,
+      "n": 3011,
+      "accuracy": 0.6991032879442046,
+      "macro_f1": 0.6990626257598543,
+      "per_class": {
+        "D": {
+          "support": 1484,
+          "precision": 0.6850192061459667,
+          "recall": 0.7210242587601078,
+          "f1": 0.7025607353906763,
+          "false_negatives": 414
+        },
+        "R": {
+          "support": 1527,
+          "precision": 0.7142857142857143,
+          "recall": 0.6777996070726916,
+          "f1": 0.6955645161290324,
+          "false_negatives": 492
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "all",
+      "speakers": 500,
+      "n": 3970,
+      "accuracy": 0.6307304785894207,
+      "macro_f1": 0.6206870572090588,
+      "per_class": {
+        "D": {
+          "support": 1852,
+          "precision": 0.5698263386396527,
+          "recall": 0.8504319654427646,
+          "f1": 0.6824090121317158,
+          "false_negatives": 277
+        },
+        "R": {
+          "support": 2118,
+          "precision": 0.7703150912106136,
+          "recall": 0.43862134088762983,
+          "f1": 0.5589651022864018,
+          "false_negatives": 1189
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "short",
+      "speakers": 366,
+      "n": 1087,
+      "accuracy": 0.4609015639374425,
+      "macro_f1": 0.4440955519405716,
+      "per_class": {
+        "D": {
+          "support": 414,
+          "precision": 0.40023201856148494,
+          "recall": 0.8333333333333334,
+          "f1": 0.5407523510971788,
+          "false_negatives": 69
+        },
+        "R": {
+          "support": 673,
+          "precision": 0.6933333333333334,
+          "recall": 0.23179791976225855,
+          "f1": 0.34743875278396436,
+          "false_negatives": 517
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "long",
+      "speakers": 280,
+      "n": 967,
+      "accuracy": 0.7362978283350569,
+      "macro_f1": 0.7240151633009615,
+      "per_class": {
+        "D": {
+          "support": 527,
+          "precision": 0.7111801242236024,
+          "recall": 0.8690702087286527,
+          "f1": 0.7822374039282664,
+          "false_negatives": 69
+        },
+        "R": {
+          "support": 440,
+          "precision": 0.7863777089783281,
+          "recall": 0.5772727272727273,
+          "f1": 0.6657929226736566,
+          "false_negatives": 186
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "house",
+      "speakers": 402,
+      "n": 2612,
+      "accuracy": 0.6362940275650842,
+      "macro_f1": 0.6266406505787416,
+      "per_class": {
+        "D": {
+          "support": 1228,
+          "precision": 0.5770509977827051,
+          "recall": 0.8477198697068404,
+          "f1": 0.6866754617414247,
+          "false_negatives": 187
+        },
+        "R": {
+          "support": 1384,
+          "precision": 0.7685643564356436,
+          "recall": 0.4486994219653179,
+          "f1": 0.5666058394160585,
+          "false_negatives": 763
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "senate",
+      "speakers": 98,
+      "n": 1358,
+      "accuracy": 0.6200294550810015,
+      "macro_f1": 0.6092060177749223,
+      "per_class": {
+        "D": {
+          "support": 624,
+          "precision": 0.55625,
+          "recall": 0.8557692307692307,
+          "f1": 0.6742424242424242,
+          "false_negatives": 90
+        },
+        "R": {
+          "support": 734,
+          "precision": 0.7738693467336684,
+          "recall": 0.4196185286103542,
+          "f1": 0.5441696113074205,
+          "false_negatives": 426
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "party_mention",
+      "speakers": 284,
+      "n": 829,
+      "accuracy": 0.7334137515078407,
+      "macro_f1": 0.6874190647942304,
+      "per_class": {
+        "D": {
+          "support": 527,
+          "precision": 0.7467741935483871,
+          "recall": 0.8785578747628083,
+          "f1": 0.8073234524847428,
+          "false_negatives": 64
+        },
+        "R": {
+          "support": 302,
+          "precision": 0.69377990430622,
+          "recall": 0.48013245033112584,
+          "f1": 0.5675146771037182,
+          "false_negatives": 157
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "no_party_mention",
+      "speakers": 490,
+      "n": 3141,
+      "accuracy": 0.603629417382999,
+      "macro_f1": 0.5992594814443545,
+      "per_class": {
+        "D": {
+          "support": 1325,
+          "precision": 0.5186567164179104,
+          "recall": 0.8392452830188679,
+          "f1": 0.6411069472470453,
+          "false_negatives": 213
+        },
+        "R": {
+          "support": 1816,
+          "precision": 0.7863590772316951,
+          "recall": 0.43171806167400884,
+          "f1": 0.5574120156416636,
+          "false_negatives": 1032
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "seen_train",
+      "speakers": 353,
+      "n": 3118,
+      "accuracy": 0.6321359846055163,
+      "macro_f1": 0.6196468694786464,
+      "per_class": {
+        "D": {
+          "support": 1504,
+          "precision": 0.5819183111519045,
+          "recall": 0.8430851063829787,
+          "f1": 0.6885691012761335,
+          "false_negatives": 236
+        },
+        "R": {
+          "support": 1614,
+          "precision": 0.7486687965921193,
+          "recall": 0.4355638166047088,
+          "f1": 0.5507246376811594,
+          "false_negatives": 911
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "text",
+      "slice": "unseen_train",
+      "speakers": 147,
+      "n": 852,
+      "accuracy": 0.6255868544600939,
+      "macro_f1": 0.6221718985240698,
+      "per_class": {
+        "D": {
+          "support": 348,
+          "precision": 0.5247863247863248,
+          "recall": 0.882183908045977,
+          "f1": 0.6580921757770632,
+          "false_negatives": 41
+        },
+        "R": {
+          "support": 504,
+          "precision": 0.846441947565543,
+          "recall": 0.44841269841269843,
+          "f1": 0.5862516212710766,
+          "false_negatives": 278
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "all",
+      "speakers": 500,
+      "n": 3970,
+      "accuracy": 0.6576826196473552,
+      "macro_f1": 0.657186678009841,
+      "per_class": {
+        "D": {
+          "support": 1852,
+          "precision": 0.6086381665932129,
+          "recall": 0.7456803455723542,
+          "f1": 0.6702256733802476,
+          "false_negatives": 471
+        },
+        "R": {
+          "support": 2118,
+          "precision": 0.7231040564373897,
+          "recall": 0.5807365439093485,
+          "f1": 0.6441476826394344,
+          "false_negatives": 888
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "short",
+      "speakers": 366,
+      "n": 1087,
+      "accuracy": 0.49310027598896045,
+      "macro_f1": 0.4904766968527884,
+      "per_class": {
+        "D": {
+          "support": 414,
+          "precision": 0.40878828229027964,
+          "recall": 0.7415458937198067,
+          "f1": 0.527038626609442,
+          "false_negatives": 107
+        },
+        "R": {
+          "support": 673,
+          "precision": 0.6815476190476191,
+          "recall": 0.34026745913818723,
+          "f1": 0.45391476709613476,
+          "false_negatives": 444
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "long",
+      "speakers": 280,
+      "n": 967,
+      "accuracy": 0.7259565667011375,
+      "macro_f1": 0.7235619840149128,
+      "per_class": {
+        "D": {
+          "support": 527,
+          "precision": 0.7471698113207547,
+          "recall": 0.7514231499051234,
+          "f1": 0.7492904446546832,
+          "false_negatives": 131
+        },
+        "R": {
+          "support": 440,
+          "precision": 0.700228832951945,
+          "recall": 0.6954545454545454,
+          "f1": 0.6978335233751425,
+          "false_negatives": 134
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "house",
+      "speakers": 402,
+      "n": 2612,
+      "accuracy": 0.6699846860643185,
+      "macro_f1": 0.6696748190765923,
+      "per_class": {
+        "D": {
+          "support": 1228,
+          "precision": 0.625,
+          "recall": 0.745114006514658,
+          "f1": 0.6797919762258544,
+          "false_negatives": 313
+        },
+        "R": {
+          "support": 1384,
+          "precision": 0.7273519163763066,
+          "recall": 0.6033236994219653,
+          "f1": 0.6595576619273302,
+          "false_negatives": 549
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "senate",
+      "speakers": 98,
+      "n": 1358,
+      "accuracy": 0.634020618556701,
+      "macro_f1": 0.6330174762645022,
+      "per_class": {
+        "D": {
+          "support": 624,
+          "precision": 0.5788819875776398,
+          "recall": 0.7467948717948718,
+          "f1": 0.6522043386983906,
+          "false_negatives": 158
+        },
+        "R": {
+          "support": 734,
+          "precision": 0.7142857142857143,
+          "recall": 0.5381471389645777,
+          "f1": 0.6138306138306139,
+          "false_negatives": 339
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "party_mention",
+      "speakers": 284,
+      "n": 829,
+      "accuracy": 0.7418576598311218,
+      "macro_f1": 0.7188815222351808,
+      "per_class": {
+        "D": {
+          "support": 527,
+          "precision": 0.7903525046382189,
+          "recall": 0.8083491461100569,
+          "f1": 0.799249530956848,
+          "false_negatives": 101
+        },
+        "R": {
+          "support": 302,
+          "precision": 0.6517241379310345,
+          "recall": 0.6258278145695364,
+          "f1": 0.6385135135135136,
+          "false_negatives": 113
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "no_party_mention",
+      "speakers": 490,
+      "n": 3141,
+      "accuracy": 0.63546641197071,
+      "macro_f1": 0.6351929327883544,
+      "per_class": {
+        "D": {
+          "support": 1325,
+          "precision": 0.5520231213872833,
+          "recall": 0.720754716981132,
+          "f1": 0.6252045826513912,
+          "false_negatives": 370
+        },
+        "R": {
+          "support": 1816,
+          "precision": 0.7377746279234585,
+          "recall": 0.573237885462555,
+          "f1": 0.6451812829253176,
+          "false_negatives": 775
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "seen_train",
+      "speakers": 353,
+      "n": 3118,
+      "accuracy": 0.6472097498396407,
+      "macro_f1": 0.6457813506948461,
+      "per_class": {
+        "D": {
+          "support": 1504,
+          "precision": 0.6114790286975718,
+          "recall": 0.7367021276595744,
+          "f1": 0.6682750301568154,
+          "false_negatives": 396
+        },
+        "R": {
+          "support": 1614,
+          "precision": 0.6967840735068913,
+          "recall": 0.563816604708798,
+          "f1": 0.6232876712328768,
+          "false_negatives": 704
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "model": "chamber",
+      "slice": "unseen_train",
+      "speakers": 147,
+      "n": 852,
+      "accuracy": 0.6960093896713615,
+      "macro_f1": 0.6950814915123084,
+      "per_class": {
+        "D": {
+          "support": 348,
+          "precision": 0.5973741794310722,
+          "recall": 0.7844827586206896,
+          "f1": 0.6782608695652174,
+          "false_negatives": 75
+        },
+        "R": {
+          "support": 504,
+          "precision": 0.810126582278481,
+          "recall": 0.6349206349206349,
+          "f1": 0.7119021134593994,
+          "false_negatives": 184
+        }
+      }
+    }
+  ],
+  "party_deleted": [
+    {
+      "phase": "dev",
+      "run": "temporal_text_s4011",
+      "original": {
+        "n": 3968,
+        "accuracy": 0.7094254032258065,
+        "macro_f1": 0.7017388393373734,
+        "per_class": {
+          "D": {
+            "support": 2029,
+            "precision": 0.6700310559006211,
+            "recall": 0.85066535239034,
+            "f1": 0.7496199782844734,
+            "false_negatives": 303
+          },
+          "R": {
+            "support": 1939,
+            "precision": 0.7823275862068966,
+            "recall": 0.5616297060340382,
+            "f1": 0.6538577003902732,
+            "false_negatives": 850
+          }
+        }
+      },
+      "party_deleted": {
+        "n": 3968,
+        "accuracy": 0.7048891129032258,
+        "macro_f1": 0.6981939747890049,
+        "per_class": {
+          "D": {
+            "support": 2029,
+            "precision": 0.6695652173913044,
+            "recall": 0.8348940364711681,
+            "f1": 0.7431454266286466,
+            "false_negatives": 335
+          },
+          "R": {
+            "support": 1939,
+            "precision": 0.7670375521557719,
+            "recall": 0.5688499226405364,
+            "f1": 0.6532425229493634,
+            "false_negatives": 836
+          }
+        }
+      },
+      "flips_vs_original": 66,
+      "D_to_R": 56,
+      "R_to_D": 10,
+      "correct_to_wrong": 42,
+      "wrong_to_correct": 24,
+      "party_masked": {
+        "n": 3968,
+        "accuracy": 0.7038810483870968,
+        "macro_f1": 0.6972094549568866,
+        "per_class": {
+          "D": {
+            "support": 2029,
+            "precision": 0.6689082278481012,
+            "recall": 0.8334154756037457,
+            "f1": 0.7421549264867237,
+            "false_negatives": 338
+          },
+          "R": {
+            "support": 1939,
+            "precision": 0.7652777777777777,
+            "recall": 0.5683341928829293,
+            "f1": 0.6522639834270494,
+            "false_negatives": 837
+          }
+        }
+      }
+    },
+    {
+      "phase": "test",
+      "run": "temporal_text_s4011",
+      "original": {
+        "n": 3970,
+        "accuracy": 0.6307304785894207,
+        "macro_f1": 0.6206870572090588,
+        "per_class": {
+          "D": {
+            "support": 1852,
+            "precision": 0.5698263386396527,
+            "recall": 0.8504319654427646,
+            "f1": 0.6824090121317158,
+            "false_negatives": 277
+          },
+          "R": {
+            "support": 2118,
+            "precision": 0.7703150912106136,
+            "recall": 0.43862134088762983,
+            "f1": 0.5589651022864018,
+            "false_negatives": 1189
+          }
+        }
+      },
+      "party_deleted": {
+        "n": 3970,
+        "accuracy": 0.6221662468513854,
+        "macro_f1": 0.6131525282090086,
+        "per_class": {
+          "D": {
+            "support": 1852,
+            "precision": 0.5646108663729809,
+            "recall": 0.8304535637149028,
+            "f1": 0.6722027972027972,
+            "false_negatives": 314
+          },
+          "R": {
+            "support": 2118,
+            "precision": 0.7479935794542536,
+            "recall": 0.4400377714825307,
+            "f1": 0.5541022592152199,
+            "false_negatives": 1186
+          }
+        }
+      },
+      "flips_vs_original": 60,
+      "D_to_R": 50,
+      "R_to_D": 10,
+      "correct_to_wrong": 47,
+      "wrong_to_correct": 13,
+      "party_masked": {
+        "n": 3970,
+        "accuracy": 0.6214105793450881,
+        "macro_f1": 0.6124701416632315,
+        "per_class": {
+          "D": {
+            "support": 1852,
+            "precision": 0.5641308342521132,
+            "recall": 0.8288336933045356,
+            "f1": 0.6713317297179094,
+            "false_negatives": 317
+          },
+          "R": {
+            "support": 2118,
+            "precision": 0.7461969575660529,
+            "recall": 0.4400377714825307,
+            "f1": 0.5536085536085537,
+            "false_negatives": 1186
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "run": "temporal_text_s4011",
+  "speeches": 3968,
+  "edits": {
+    "original": {
+      "changed": 0,
+      "kept_because_empty": 0
+    },
+    "party_masked": {
+      "changed": 957,
+      "kept_because_empty": 0
+    },
+    "heading_removed": {
+      "changed": 1622,
+      "kept_because_empty": 0
+    },
+    "first_sentence_removed": {
+      "changed": 3964,
+      "kept_because_empty": 4
+    },
+    "last_sentence_removed": {
+      "changed": 3964,
+      "kept_because_empty": 4
+    }
+  }
+}

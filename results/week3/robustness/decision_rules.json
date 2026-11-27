@@ -1,0 +1,218 @@
+{
+  "grid": "0.05 to 0.95 by 0.01",
+  "selection": "max development macro-F1, then closest to 0.5",
+  "models": {
+    "text": {
+      "missed_on_dev": {
+        "missed_republicans": 850,
+        "median_p_R": 0.22995278239250183,
+        "share_p_R_at_least_0.40": 0.1859,
+        "share_p_R_at_least_0.30": 0.36,
+        "share_p_R_at_least_0.20": 0.5494,
+        "share_p_R_below_0.10": 0.2624
+      },
+      "missed_on_test": {
+        "missed_republicans": 1189,
+        "median_p_R": 0.1812329739332199,
+        "share_p_R_at_least_0.40": 0.1505,
+        "share_p_R_at_least_0.30": 0.2868,
+        "share_p_R_at_least_0.20": 0.4634,
+        "share_p_R_below_0.10": 0.3675
+      },
+      "rules": {
+        "argmax_0.5": {
+          "spec": {
+            "threshold": 0.5
+          },
+          "dev": {
+            "macro_f1": 0.7017,
+            "accuracy": 0.7094,
+            "D_recall": 0.8507,
+            "R_recall": 0.5616,
+            "D_precision": 0.67,
+            "R_precision": 0.7823
+          },
+          "test": {
+            "macro_f1": 0.6207,
+            "accuracy": 0.6307,
+            "D_recall": 0.8504,
+            "R_recall": 0.4386,
+            "D_precision": 0.5698,
+            "R_precision": 0.7703
+          }
+        },
+        "one_threshold": {
+          "spec": {
+            "threshold": 0.35
+          },
+          "dev": {
+            "macro_f1": 0.7188,
+            "accuracy": 0.7195,
+            "D_recall": 0.7516,
+            "R_recall": 0.6859,
+            "D_precision": 0.7146,
+            "R_precision": 0.7252
+          },
+          "test": {
+            "macro_f1": 0.6428,
+            "accuracy": 0.6436,
+            "D_recall": 0.7397,
+            "R_recall": 0.5595,
+            "D_precision": 0.5949,
+            "R_precision": 0.7109
+          }
+        },
+        "by_length": {
+          "spec": {
+            "short": 0.1,
+            "other": 0.35
+          },
+          "dev": {
+            "macro_f1": 0.7257,
+            "accuracy": 0.7258,
+            "D_recall": 0.6939,
+            "R_recall": 0.7592,
+            "D_precision": 0.7509,
+            "R_precision": 0.7033
+          },
+          "test": {
+            "macro_f1": 0.6605,
+            "accuracy": 0.661,
+            "D_recall": 0.6685,
+            "R_recall": 0.6544,
+            "D_precision": 0.6284,
+            "R_precision": 0.693
+          }
+        },
+        "by_chamber": {
+          "spec": {
+            "H": 0.27,
+            "S": 0.41
+          },
+          "dev": {
+            "macro_f1": 0.7239,
+            "accuracy": 0.724,
+            "D_recall": 0.7324,
+            "R_recall": 0.7153,
+            "D_precision": 0.7291,
+            "R_precision": 0.7187
+          },
+          "test": {
+            "macro_f1": 0.6496,
+            "accuracy": 0.6496,
+            "D_recall": 0.7106,
+            "R_recall": 0.5963,
+            "D_precision": 0.6062,
+            "R_precision": 0.7021
+          }
+        }
+      }
+    },
+    "chamber": {
+      "missed_on_dev": {
+        "missed_republicans": 593,
+        "median_p_R": 0.26904410123825073,
+        "share_p_R_at_least_0.40": 0.2344,
+        "share_p_R_at_least_0.30": 0.4401,
+        "share_p_R_at_least_0.20": 0.6172,
+        "share_p_R_below_0.10": 0.2462
+      },
+      "missed_on_test": {
+        "missed_republicans": 888,
+        "median_p_R": 0.19709718227386475,
+        "share_p_R_at_least_0.40": 0.1678,
+        "share_p_R_at_least_0.30": 0.339,
+        "share_p_R_at_least_0.20": 0.4955,
+        "share_p_R_below_0.10": 0.3705
+      },
+      "rules": {
+        "argmax_0.5": {
+          "spec": {
+            "threshold": 0.5
+          },
+          "dev": {
+            "macro_f1": 0.723,
+            "accuracy": 0.7235,
+            "D_recall": 0.7516,
+            "R_recall": 0.6942,
+            "D_precision": 0.72,
+            "R_precision": 0.7276
+          },
+          "test": {
+            "macro_f1": 0.6572,
+            "accuracy": 0.6577,
+            "D_recall": 0.7457,
+            "R_recall": 0.5807,
+            "D_precision": 0.6086,
+            "R_precision": 0.7231
+          }
+        },
+        "one_threshold": {
+          "spec": {
+            "threshold": 0.5
+          },
+          "dev": {
+            "macro_f1": 0.723,
+            "accuracy": 0.7235,
+            "D_recall": 0.7516,
+            "R_recall": 0.6942,
+            "D_precision": 0.72,
+            "R_precision": 0.7276
+          },
+          "test": {
+            "macro_f1": 0.6572,
+            "accuracy": 0.6577,
+            "D_recall": 0.7457,
+            "R_recall": 0.5807,
+            "D_precision": 0.6086,
+            "R_precision": 0.7231
+          }
+        },
+        "by_length": {
+          "spec": {
+            "short": 0.2,
+            "other": 0.5
+          },
+          "dev": {
+            "macro_f1": 0.7343,
+            "accuracy": 0.7344,
+            "D_recall": 0.7072,
+            "R_recall": 0.7628,
+            "D_precision": 0.7573,
+            "R_precision": 0.7135
+          },
+          "test": {
+            "macro_f1": 0.6715,
+            "accuracy": 0.6718,
+            "D_recall": 0.6868,
+            "R_recall": 0.6586,
+            "D_precision": 0.6376,
+            "R_precision": 0.7063
+          }
+        },
+        "by_chamber": {
+          "spec": {
+            "H": 0.5,
+            "S": 0.5
+          },
+          "dev": {
+            "macro_f1": 0.723,
+            "accuracy": 0.7235,
+            "D_recall": 0.7516,
+            "R_recall": 0.6942,
+            "D_precision": 0.72,
+            "R_precision": 0.7276
+          },
+          "test": {
+            "macro_f1": 0.6572,
+            "accuracy": 0.6577,
+            "D_recall": 0.7457,
+            "R_recall": 0.5807,
+            "D_precision": 0.6086,
+            "R_precision": 0.7231
+          }
+        }
+      }
+    }
+  }
+}

@@ -28,9 +28,25 @@ The file `representative_cases.csv` contains 80 selected speech IDs with the sou
 
 `lexical_cues.csv` ranks TF-IDF logistic-regression features separately for the temporal and speaker-disjoint protocols. These cues describe the baseline model and are not a direct explanation of RoBERTa.
 
-## Scope and pending robustness work
+## Frozen text edits
 
-This release completes matched error analysis and lexical-cue analysis. Party-name masking and phrase-removal tests require the formal RoBERTa checkpoints and training workstation; checkpoint files are not included in this clone.
+The same 3,968 development speeches and 3,970 test speeches were scored again after four frozen edits. No weights were updated. A local Apple GPU run in 32-bit precision matches the saved Week 2 labels on 3,963 of 3,968 development speeches and 3,965 of 3,970 test speeches for the text model. Each cell is macro-F1 / accuracy. Flips count predictions that differ from that model's own original-text prediction.
+
+| Edit | Dev text | Dev chamber | Test text | Test chamber |
+|---|---:|---:|---:|---:|
+| Original | 0.702 / 0.709 | 0.723 / 0.724 | 0.621 / 0.631 | 0.657 / 0.658 |
+| Party-name mask | 0.697 / 0.704 | 0.708 / 0.708 | 0.613 / 0.621 | 0.636 / 0.636 |
+| Heading removed | 0.704 / 0.711 | 0.722 / 0.722 | 0.629 / 0.637 | 0.654 / 0.655 |
+| First sentence removed | 0.701 / 0.708 | 0.720 / 0.721 | 0.626 / 0.635 | 0.647 / 0.648 |
+| Last sentence removed | 0.701 / 0.709 | 0.720 / 0.721 | 0.619 / 0.629 | 0.656 / 0.656 |
+
+Party-name masking is the edit that lowers the score on both partitions. The drop is larger for the chamber model, 0.015 on development and 0.021 on test, and almost all of those flips turn a Democrat prediction into a Republican prediction. Removing the last sentence changes the most labels, 140 on development and 156 on test for the text model, while macro-F1 stays within 0.003 of the original. Heading removal slightly raises the text-only score on both partitions.
+
+Development slices, confident mistakes, and the conclusion for each result are in [Error analysis and improvement run](error_analysis_and_improvement_run.md).
+
+## Scope
+
+Matched error analysis, lexical cues, and the frozen edit check are complete for the temporal text and text-plus-chamber models, seed 4011. The edit rules were fixed on development and then applied once to test.
 
 ## Reproduction
 
